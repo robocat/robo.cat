@@ -31,7 +31,7 @@ function rk_theme_url($path) {
 }
 
 function rk_title() {
-	return wp_title('~', true, right); . bloginfo('name');
+	return wp_title('~', true, right) . bloginfo('name');
 }
 
 function rk_meta_title() {
