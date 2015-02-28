@@ -20,7 +20,7 @@
         <script src="//use.typekit.net/xtg1xvo.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
     	
-        <link rel='stylesheet' href='<?php theme_url("css/main.css"); ?>'>
+        <link rel='stylesheet' href='<?php rk_theme_url("css/main.css"); ?>'>
     
         <link rel="image_src" href="<?php rk_theme_url("apple-touch-icon.png"); ?>" /> 
         <link rel="shortcut icon" href="<?php rk_theme_url("favicon.ico"); ?>" />
