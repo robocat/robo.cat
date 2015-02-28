@@ -42,8 +42,12 @@ watch:
 open:
 	powder open
 
+release:
+	gulp release
+
 deploy:
 	make release \
-	&& s3_website push
+	&& s3_website push \
+	&& git push adventures master
 
 .PHONY: theme
