@@ -24,5 +24,12 @@
 	</nav>
 </div>
 
+<div class="aboutus-container cont">
+	<div class="aboutus int">
+		<p>At Robocat we’ve had a habit of throwing ourselves into one fun project after another. Some would call them cases, we prefer to see them as adventures. Here we’ve chronicled a few.</p>
+	</div>
+</div>
+
+
 
 <?php get_footer(); ?>
