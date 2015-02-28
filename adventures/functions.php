@@ -22,11 +22,11 @@ function rk_img($path, $class = NULL, $retian = true) {
 	return $str;
 }
 
-function rk_img_url($path) {
+function rk_img_url($path = "") {
 	return rk_theme_url() + "/images/$path";
 }
 
-function rk_theme_url($path) {
+function rk_theme_url($path = "") {
 	return bloginfo('template_url') + "/$path";	
 }
 
