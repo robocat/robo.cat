@@ -44,3 +44,5 @@ open:
 
 deploy:
 	s3_website push
+
+.PHONY: theme
