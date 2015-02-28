@@ -1,7 +1,7 @@
 <?php
 
 function rk_retina_path($path) {
-	$comps = split(".", $path);
+	$comps = split("\.", $path);
 
 	return $comps[0] . "@2x." . $comps[1];
 }
@@ -10,7 +10,7 @@ function rk_img($path, $class = NULL, $retina = true) {
 	$imgpath = rk_img_url($path, false);
 	$retpath = rk_retina_path($path);
 
-	$str = "<img src\"".$imgpath."\"";
+	$str = "<img src=\"".$imgpath."\"";
 	if ($retina) {
 		$str .= " data-at2x=\"".$retpath."\"";
 	}
