@@ -32,7 +32,7 @@ function rk_img_url($path = "", $echo = true) {
 }
 
 function rk_theme_url($path = "", $echo = true) {
-	$url = "http://adventures.robo.cat/themes/robotheme/$path";	
+	$url = "http://adventures.robo.cat/wp-content/themes/robotheme/$path";	
 	if ($echo) {
 		echo $url;
 	} else {
