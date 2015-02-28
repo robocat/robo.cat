@@ -43,6 +43,7 @@ open:
 	powder open
 
 deploy:
-	s3_website push
+	make release \
+	&& s3_website push
 
 .PHONY: theme
