@@ -1,7 +1,7 @@
 <?php
 
 function rk_retina_path($path) {
-	$comps = $path.split(".");
+	$comps = split(".", $path);
 
 	return $comps[0] . "@2x." . $comps[1];
 }
@@ -23,11 +23,11 @@ function rk_img($path, $class = NULL, $retian = true) {
 }
 
 function rk_img_url($path = "") {
-	return rk_theme_url() + "/images/$path";
+	return rk_theme_url() . "/images/$path";
 }
 
 function rk_theme_url($path = "") {
-	return bloginfo('template_url') + "/$path";	
+	return bloginfo('template_url') . "/$path";	
 }
 
 function rk_title() {
