@@ -30,4 +30,26 @@
 	</div>
 </div>
 
+<div class="adventures-container cont">
+	<div class="adventures int">
+		<div class="posts feed">
+			<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<a href="<?php the_permalink(); ?>" title="Permalink" class="post-image">
+                        <?php the_post_thumbnail('large'); ?>
+                    </a>
+					<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permalink"><?php the_title(); ?></a></h2>
+					<?php the_excerpt(); ?>
+
+					<div class="actions">
+                        <a href="<?php the_permalink(); ?>" class="button action-button adventure">Go on this adventure →</a>
+                    </div>
+				</article>
+
+			<?php endwhile; endif; ?>
+		</div>
+	</div>
+</div>
+
 <?php get_footer(); ?>
