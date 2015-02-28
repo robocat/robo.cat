@@ -7,7 +7,7 @@ function rk_retina_path($path) {
 }
 
 function rk_img($path, $class = NULL, $retian = true) {
-	$imgpath = rk_img_url($path);
+	$imgpath = rk_img_url($path, false);
 	$retpath = rk_retina_path($path);
 
 	$str = "<img src\"$imgpath\"";
@@ -19,15 +19,25 @@ function rk_img($path, $class = NULL, $retian = true) {
 	}
 	$str .= ">";
 
-	return $str;
+	echo $str;
 }
 
-function rk_img_url($path = "") {
-	return rk_theme_url() . "/images/$path";
+function rk_img_url($path = "", $echo = true) {
+	$url = rk_theme_url("/images/$path", false);
+	if ($echo) {
+		echo $url;
+	} else {
+		return $url;
+	}
 }
 
-function rk_theme_url($path = "") {
-	return bloginfo('template_url') . "/$path";	
+function rk_theme_url($path = "", $echo = true) {
+	$url = "http://adventures.robo.cat/$path";	
+	if ($echo) {
+		echo $url;
+	} else {
+		return $url;
+	}
 }
 
 function rk_title() {
@@ -46,9 +56,9 @@ function rk_meta_image() {
 	if (is_single() && has_post_thumbnail(get_the_ID())) { 
 		$tid = get_post_thumbnail_id(get_the_ID()); 
 		$att = wp_get_attachment_image_src($tid, 'large'); 
-		return $att[0];
+		echo $att[0];
 	} else { 
-		return rk_theme_url("apple-touch-icon.png");
+		echo rk_theme_url("apple-touch-icon.png", false);
 	}
 }
 
