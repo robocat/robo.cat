@@ -1,5 +1,5 @@
 fitHeader = ->
-	$("#header-container").css 'height', $(window).height()
+	$("body.autorize #header-container").css 'height', $(window).height()
 
 initialMenuPosition = 0
 
