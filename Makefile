@@ -7,12 +7,15 @@ install:
 	&& neat install \
 	&& mv neat assets/css/vendor/ \
 	&& curl -L http://bit.ly/jqsource > ./assets/js/vendor/jquery.js \
-	&& make build \
-	&& powder link
+	&& make build 
+
+link:
+	powder link
 
 clean:
 	rm -rf ./node_modules \
 	&& rm -rf ./public \
+	&& rm -rf ./theme \
 	&& rm -rf ./tmp \
 	&& rm -rf ./sass-cache \
 	&& rm -rf ./assets/css/vendor/neat \
@@ -28,6 +31,10 @@ update:
 
 build:
 	gulp cleanbuild
+
+theme:
+	gulp cleanbuild \
+	&& gulp theme
 
 watch:
 	gulp

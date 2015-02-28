@@ -6,6 +6,7 @@
 .Spotlight-V100
 
 public
+theme
 node_modules
 
 .env
