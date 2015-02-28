@@ -23,7 +23,7 @@ function rk_img($path, $class = NULL, $retian = true) {
 }
 
 function rk_img_url($path) {
-	return theme_url() + "/images/$path";
+	return rk_theme_url() + "/images/$path";
 }
 
 function rk_theme_url($path) {
