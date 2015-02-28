@@ -33,14 +33,20 @@
 }
 
 .navigation {
+	background-color: #0b0e15;
 	bottom: 0;
+	height: 90px;
 	position: absolute;
 	width: 100%;
 
-	.sticky {
+	.navigation-inner {
 		@include outer-container;
 		padding: 0px 60px;
-		height: 90px;
+	}
+
+	&.sticky {
+		position: fixed;
+		top: 0;
 	}
 
 	a {
@@ -81,7 +87,7 @@
 
 @include media(max-width 930px) {
 	.navigation {
-		.sticky {
+		.navigation-inner {
 			padding: 0 20px;
 		}
 
@@ -95,7 +101,7 @@
 
 @include media(max-width 750px) {
 	.navigation {
-		.sticky {
+		.navigation-inner {
 			padding: 0 10px;
 		}
 
@@ -113,9 +119,9 @@
 
 @include media(max-width 550px) {
 	.navigation {
-		height: auto;
+		height: 130px;
 
-		.sticky {
+		.navigation-inner {
 			height: auto;
 			padding: 0;
 
@@ -154,7 +160,7 @@
 	}
 
 	.navigation {
-		.sticky {
+		.navigation-inner {
 			.right {
 				padding: 0px;
 			}

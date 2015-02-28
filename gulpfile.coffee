@@ -46,6 +46,7 @@ site = {
 reload_script = '<script src="//localhost:{{ config.port }}/livereload.js"></script>'
 
 build_path = "./public"
+theme_path = "./theme"
 
 paths = {
 	copyfile: "{downloads/*,favicon.ico,apple-touch-icon.png}",
@@ -53,7 +54,8 @@ paths = {
 	sass: "assets/css/**/*.{scss,sass}",
 	coffee: "assets/js/**/*.coffee",
 	js: "assets/js/**/*.js",
-	images: "assets/images/**/*.{jpg,png}"
+	images: "assets/images/**/*.{jpg,png}",
+	adventure: "adventures/**/*"
 }
 
 retinaPath = (path) ->
@@ -177,6 +179,13 @@ gulp.task 'html', ->
 		.pipe(gif(config.production, htmlmin()))
 		.pipe(gulp.dest(build_path))
 		.pipe(reload())
+
+gulp.task 'theme', ->
+	gulp.src("{#{paths.adventure},public/{js,css,images}/**/*}")
+		.pipe(copy(theme_path, {prefix: 1}))
+
+	gulp.src(paths.copyfile)
+		.pipe(copy(theme_path))
 
 gulp.task 'watch', ->
 	reload.listen(config.port)
