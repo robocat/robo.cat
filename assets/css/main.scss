@@ -1,0 +1,41 @@
+$asset-pipeline: true;
+$max-width: 1170px;
+// $visual-grid: true;
+$visual-grid-color: lightblue;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.1;
+$shopify: false;
+
+@import "_normalize";
+
+@import "bourbon";
+@import "neat";
+
+@import "_fonts";
+@import "_mixins";
+
+@import "sections/_header";
+@import "sections/_aboutus";
+@import "sections/_apps";
+
+.cont {
+	width: 100%;
+}
+
+.int {
+	@include outer-container;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover { text-decoration: underline; }
+}
+
+h1, h2, h3, h4 {
+	font: $black;
+}
+
+p, span, a {
+	font: $regular;
+}

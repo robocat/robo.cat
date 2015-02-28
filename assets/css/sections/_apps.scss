@@ -1,0 +1,106 @@
+$apps: "breaking" "bemyeyes" "wordbase" "haze";
+
+.app-container {
+	background-position: center center;
+	background-size: cover;
+	text-align: center;
+
+	@each $app in $apps {
+		&.#{$app} { background-image: image-url("app-#{$app}-background.jpg"); }
+	}
+}
+
+.app {
+	padding: 115px 10px;
+
+	&.light {
+		.name, .tagline, .button { color: #fff; }
+	}
+
+	&.dark {
+		.name, .tagline { color: #1f1f1f; }
+		.button { color: #393939; }
+	}
+
+	.icon-link {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.name {
+		margin: 10px 0 0 0;
+	}
+
+	.tagline {
+		font: $regular;
+		font-size: 22pt;
+		margin: 0 0 40px 0;
+	}
+
+	ul {
+		display: inline;
+		list-style: none;
+		padding: 0;
+	}
+
+	li {
+		display: inline;
+		margin: 0 15px;
+
+		&:first-child { margin-left: 0; }
+		&:last-child { margin-right: 0; }
+	}
+
+	.button {
+		background-position: 0px center;
+		background-repeat: no-repeat;
+	}
+}
+
+.app {
+	$themes: "dark" "light";
+	$buttons: "download" 26px 25px 37px, "website" 20px 20px 28px, "adventure" 20px 24px 27px;
+	@each $theme in $themes {
+		@each $button in $buttons {
+			$class: nth($button, 1);
+			&.#{$theme} .button.#{$class} { 
+				padding-left: nth($button, 4);
+				@include retina-image("button-#{$class}-#{$theme}", nth($button, 2) nth($button, 3));
+			}
+		}
+	}
+}
+
+@include media(max-width 680px) {
+	.app {
+		padding: 60px 10px;
+	}
+}
+
+@include media(max-width 580px) {
+	.app {
+		.icon-link img {
+			max-width: 150px !important;
+		}
+
+		.name {
+			font-size: 34pt;
+		}
+
+		.tagline {
+			font-size: 20pt;
+		}
+
+		li {
+			&:first-child {
+				display: block;
+				margin: 25px auto;
+			}
+
+			&:nth-child(2n) {
+				margin-left: 0;
+				margin-right: 15px;
+			}
+		}
+	}
+}
