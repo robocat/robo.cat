@@ -33,7 +33,7 @@ build:
 	gulp cleanbuild
 
 theme:
-	gulp cleanbuild \
+	make build \
 	&& gulp theme
 
 watch:
