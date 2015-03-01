@@ -5,7 +5,7 @@ get_header();
 $himage = rk_post_header_image();
 $style = "";
 
-if (!is_empty($himage)) {
+if (!empty($himage)) {
 	$style = " style=\"background-image: url('$himage');\"";
 }
 
