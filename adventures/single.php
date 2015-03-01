@@ -1,6 +1,19 @@
-<?php get_header(); ?>
+<?php
 
-<div class="header-container cont" id="header-container">
+get_header();
+
+$himage = rk_post_header_image();
+$style = "";
+
+if (!is_empty($himage)) {
+	$style = " style=\"background-image: url('$himage');\"";
+}
+
+if(have_posts()) : the_post();
+
+?>
+
+<div class="header-container cont single-post-header" id="header-container"<?php echo $style; ?>>
 	<nav class="navigation">
 		<div class="navigation-inner">
 			<div class="left">
@@ -22,7 +35,30 @@
 			</div>
 		</div>
 	</nav>
+
+	<header class="post-header int">
+		<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permalink"><?php the_title(); ?></a></h2>
+		<?php rk_post_tagline(); ?>
+	</header>
+</div>
+
+<div class="adventures-container cont">
+	<div class="adventures int">
+		<div class="posts single-post">
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<hr>
+
+				<?php the_content(); ?>
+			</article>
+		</div>
+	</div>
 </div>
 
 
-<?php get_footer(); ?>
+<?php 
+
+endif;
+
+get_footer();
+
+?>

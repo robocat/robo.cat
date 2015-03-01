@@ -81,6 +81,34 @@ function rk_register_meta_boxes($mb) {
 // Suport Featured Images for posts
 add_theme_support( 'post-thumbnails' );
 
+function rk_post_tagline() {
+	if (function_exists('rwmb_meta')) {
+        $meta = rwmb_meta('ai_tagline', 'type=text');
+        if (!empty($meta)) {
+            echo "<h3 class='tagline'>" . $meta . "</h3>";
+        }
+    }
+}
+
+function rk_post_header_image() {
+	$meta = rwmb_meta('ai_header_image', 'type=image&amp;size=original&amp;');
+
+	if (count($meta) > 0) {
+		$item = array_pop($meta);
+		return $item["full_url"];
+	}
+
+	return "";
+}
+
+function rk_header_id() {
+	if (function_exists('rwmb_meta') && is_single()) {
+		return "single-post";
+	} else {
+		return "";
+	}
+}
+
 function rk_retina_path($path) {
 	$comps = split("\.", $path);
 
