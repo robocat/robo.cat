@@ -8,7 +8,7 @@ function rk_roots_add_rewrites($content) {
   $roots_new_non_wp_rules = array(
     'css/(.*)'      => 'wp-content/themes/'. $theme_name . '/css/$1',
     'js/(.*)'       => 'wp-content/themes/'. $theme_name . '/js/$1',
-    'images/(.*)'      => 'wp-content/themes/'. $theme_name . '/img/$1',
+    'images/(.*)'      => 'wp-content/themes/'. $theme_name . '/images/$1',
   );
   $wp_rewrite->non_wp_rules += $roots_new_non_wp_rules;
 }
