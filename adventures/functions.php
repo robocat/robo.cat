@@ -1,6 +1,21 @@
 <?php
 
-add_action('generate_rewrite_rules', 'rk_roots_add_rewrites');
+add_action('init', 'rk_head_cleanup');
+
+function rk_head_cleanup() {
+  remove_action('wp_head', 'feed_links', 2);
+  remove_action('wp_head', 'feed_links_extra', 3);
+  remove_action('wp_head', 'rsd_link');
+  remove_action('wp_head', 'wlwmanifest_link');
+  remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+  remove_action('wp_head', 'wp_generator');
+  remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
+
+  global $wp_widget_factory;
+  remove_action('wp_head', array($wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style'));
+
+  add_filter('use_default_gallery_style', '__return_null');
+}
 
 function rk_roots_add_rewrites($content) {
   $theme_name = next(explode('/themes/', get_stylesheet_directory()));
@@ -8,10 +23,13 @@ function rk_roots_add_rewrites($content) {
   $roots_new_non_wp_rules = array(
     'css/(.*)'      => 'wp-content/themes/robotheme/css/$1',
     'js/(.*)'       => 'wp-content/themes/robotheme/js/$1',
-    'images/(.*)'      => 'wp-content/themes/robotheme/images/$1',
+    'images/(.*)'      => 'wp-content/themes/'.$theme_name.'/images/$1',
   );
   $wp_rewrite->non_wp_rules += $roots_new_non_wp_rules;
 }
+
+add_action('admin_init', 'roots_flush_rewrites');
+add_action('generate_rewrite_rules', 'rk_roots_add_rewrites');
 
 // Add meta boxes for posts
 
