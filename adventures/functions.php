@@ -6,9 +6,9 @@ function rk_roots_add_rewrites($content) {
   $theme_name = next(explode('/themes/', get_stylesheet_directory()));
   global $wp_rewrite;
   $roots_new_non_wp_rules = array(
-    'css/(.*)'      => 'wp-content/themes/'. $theme_name . '/css/$1',
-    'js/(.*)'       => 'wp-content/themes/'. $theme_name . '/js/$1',
-    'images/(.*)'      => 'wp-content/themes/'. $theme_name . '/images/$1',
+    'css/(.*)'      => 'wp-content/themes/robotheme/css/$1',
+    'js/(.*)'       => 'wp-content/themes/robotheme/js/$1',
+    'images/(.*)'      => 'wp-content/themes/robotheme/images/$1',
   );
   $wp_rewrite->non_wp_rules += $roots_new_non_wp_rules;
 }
