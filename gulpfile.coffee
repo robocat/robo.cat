@@ -33,13 +33,13 @@ config = {
 }
 
 site = {
-	title: "Startover",
-	description: "Startover is a boilerplate for developing static websites on your Mac. With Startover you don't have to start over!",
-	keywords: "template,static,website,s3"
-	url: "https://github.com/ksmandersen/startover",
+	title: "Robocat",
+	description: "We are Robocat. Product builders from Copenhagen.",
+	keywords: "iphone,ipad,ios,mac,app,apps,studio,developer,copenhagen,denmark,robocat,robot,cat,breaking,wordbase,thermo,thermodo,televised,outside,roskilde"
+	url: "https://robo.cat/",
 	fb: {
-		appName: "",
-		appId: ""
+		appName: "Robocat",
+		appId: "1551148495160059"
 	}
 }
 
@@ -50,7 +50,7 @@ theme_path = "./theme"
 
 paths = {
 	copyfile: "{downloads/*,favicon.ico,apple-touch-icon.png}",
-	handlebars: "./**/*.handlebars",
+	handlebars: "**/*.handlebars",
 	sass: "assets/css/**/*.{scss,sass}",
 	coffee: "assets/js/**/*.coffee",
 	js: "assets/js/**/*.js",
@@ -145,7 +145,7 @@ gulp.task 'html', ->
 
 	template_data = {
 		"index.handlebars": {
-			title: "Home"
+			title: false
 		}
 	}
 

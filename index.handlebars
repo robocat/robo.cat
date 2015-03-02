@@ -1,6 +1,6 @@
 {{> header }}
 
-<div class="header-container cont" id="header-container">
+<div class="header-container cont autoresize" id="header-container">
 	<header class="header int">
 		{{{ img "header-cat.png" true "cat" }}}
 
@@ -51,15 +51,15 @@
 				<nav>
 					<ul>
 						<li>
-							<a href="{{ this.download }}" class="button download" title="{{ this.name }} on the App Store">Download</a>
+							<a href="{{ this.download }}" class="button download {{ this.theme }}" title="{{ this.name }} on the App Store">Download</a>
 						</li>
 						{{#if this.adventure}}
 							<li>
-								<a href="{{ this.adventure }}" class="button adventure" title="Read the adventure behind {{ this.name }}">Read the adventure</a>
+								<a href="{{ this.adventure }}" class="button adventure {{ this.theme }}" title="Read the adventure behind {{ this.name }}">Read the adventure</a>
 							</li>
 						{{/if}}
 						<li>
-							<a href="//{{ this.website }}" class="button website" title="Visit the website">{{ this.website }}</a>
+							<a href="//{{ this.website }}" class="button website {{ this.theme }}" title="Visit the website">{{ this.website }}</a>
 						</li>
 					</ul>
 				</nav>

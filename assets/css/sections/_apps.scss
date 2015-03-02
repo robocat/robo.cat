@@ -50,25 +50,6 @@ $apps: "breaking" "bemyeyes" "wordbase" "haze";
 		&:first-child { margin-left: 0; }
 		&:last-child { margin-right: 0; }
 	}
-
-	.button {
-		background-position: 0px center;
-		background-repeat: no-repeat;
-	}
-}
-
-.app {
-	$themes: "dark" "light";
-	$buttons: "download" 26px 25px 37px, "website" 20px 20px 28px, "adventure" 20px 24px 27px;
-	@each $theme in $themes {
-		@each $button in $buttons {
-			$class: nth($button, 1);
-			&.#{$theme} .button.#{$class} { 
-				padding-left: nth($button, 4);
-				@include retina-image("button-#{$class}-#{$theme}", nth($button, 2) nth($button, 3));
-			}
-		}
-	}
 }
 
 @include media(max-width 680px) {

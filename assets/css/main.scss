@@ -40,3 +40,20 @@ h1, h2, h3, h4 {
 p, span, a {
 	font: $regular;
 }
+
+.button {
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+$themes: "dark" "light";
+$buttons: "download" 26px 25px 37px, "website" 20px 20px 28px, "adventure" 20px 24px 27px;
+@each $theme in $themes {
+	@each $button in $buttons {
+		$class: nth($button, 1);
+		.button.#{$theme}.#{$class} { 
+			padding-left: nth($button, 4);
+			@include retina-image("button-#{$class}-#{$theme}", nth($button, 2) nth($button, 3));
+		}
+	}
+}

@@ -81,17 +81,21 @@ function rk_register_meta_boxes($mb) {
 // Suport Featured Images for posts
 add_theme_support( 'post-thumbnails' );
 
-function rk_post_tagline() {
+function rk_post_tagline($echo = true) {
 	if (function_exists('rwmb_meta')) {
-        $meta = rwmb_meta('ai_tagline', 'type=text');
+        $meta = rwmb_meta('rk_tagline', 'type=text');
         if (!empty($meta)) {
-            echo "<h3 class='tagline'>" . $meta . "</h3>";
+            if ($echo) {
+            	echo $meta;
+            } else {
+            	return $meta;
+            }
         }
     }
 }
 
 function rk_post_header_image() {
-	$meta = rwmb_meta('ai_header_image', 'type=image&amp;size=original&amp;');
+	$meta = rwmb_meta('rk_header_image', 'type=image&amp;size=original&amp;');
 
 	if (count($meta) > 0) {
 		$item = array_pop($meta);

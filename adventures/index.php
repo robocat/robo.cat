@@ -36,15 +36,17 @@
 			<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<a href="<?php the_permalink(); ?>" title="Permalink" class="post-image">
-                        <?php the_post_thumbnail('large'); ?>
-                    </a>
-					<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permalink"><?php the_title(); ?></a></h2>
-					<?php the_excerpt(); ?>
+					<div class="aside">
+						<a href="<?php the_permalink(); ?>" title="Permalink" class="post-image">
+	                        <?php the_post_thumbnail('large'); ?>
+	                    </a>
+					</div>
+					<div class="content">
+						<h2><a href="<?php the_permalink(); ?>" class="title" rel="bookmark" title="Permalink"><?php the_title(); ?></a></h2>
+						<p class="tagline"><?php rk_post_tagline(); ?></p>
 
-					<div class="actions">
-                        <a href="<?php the_permalink(); ?>" class="button action-button adventure">Go on this adventure →</a>
-                    </div>
+                        <a href="<?php the_permalink(); ?>" class="button dark adventure">Go on this adventure →</a>
+					</div>
 				</article>
 
 			<?php endwhile; endif; ?>

@@ -1,16 +1,10 @@
 fitHeader = ->
-	$("body.autorize #header-container").css 'height', $(window).height()
-
-initialMenuPosition = 0
-
-prepareMenu = ->
-	initialMenuPosition = $(".navigation").position().top
-
-	stickyMenu()
+	$(".header-container.autoresize").css 'height', $(window).height()
 
 stickyMenu = ->
 	$navigation = $(".navigation")
-	if $(window).scrollTop() > initialMenuPosition + 1
+	origin = $('.header-container').height() - $navigation.height()
+	if $(window).scrollTop() > origin + 1
 		$navigation.addClass "sticky"
 	else
 		$navigation.removeClass "sticky"
@@ -26,7 +20,7 @@ $(window).scroll ->
 
 $(document).ready ->
 	fitHeader()
-	prepareMenu()
+	stickyMenu()
 
 	$("#nav-products").click (e) -> navigateTo e, "#products", ->
 		navigateTo ""

@@ -1,202 +1,43 @@
 .single-post {
-  @include span-columns(9 of 9);
-  margin-bottom: 120px;
-  padding-left: 60px;
-  padding-right: 60px;
+    @include span-columns(9 of 9);
+    margin-bottom: 120px;
+    padding-left: 60px;
+    padding-right: 60px;
 
-  article {
-    margin-bottom: 40px;
-
-    .actions {
-      margin-top: 120px;
-
-      a {
-        font-family: $bread;
-        font-size: 15pt;
-        line-height: 20pt;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-
-      .left, .right {
-        float: left;
-        display: block;
-        width: 50%;
-      }
-
-      .left {
-        text-align: left;
-      }
-
-      .right {
-        text-align: right;
-        
-        .action {
-          margin-right: 0;
-          margin-left: 20px;
-        }
-      }
+    article {
+        margin-bottom: 40px;
     }
-  }
 }
 
 .feed article {
-  .post-image {
-    margin-bottom: 10px;
-
-    &:hover {
-      opacity: 0.8;
-    }
-  }
-
-  h2, h2 a {
-    font-size: 32pt;
-    line-height: 40pt;
-    margin: 0;
-    text-align: left;
-
-    &:hover {
-      color: rgb(104, 104, 104);
-    }
-  }
-
-  p {
-    font-size: 18px;
-    line-height: 27px;
-    margin-bottom: 20px;
-  }
-
-  .actions a {
-    font-family: $bread;
-  }
-}
-
-article {
-  @include span-columns(9 of 9);
-  border-bottom: 1px solid #f0f0f0;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
-
-  .post-image {
-    display: block;
+    @include row;
     margin-bottom: 40px;
-  }
 
-  h2, h2 a {
-    color: #333;
-    font-size: 42pt;
-    line-height: 48pt;
-    margin: 0 0 20px 0;
-    text-decoration: none;
-    font-family: $title;
-    text-align: center;
-    word-wrap: break-word;
-  }
+    .aside { @include span-columns(3 of 12); }
+    .content { @include span-columns(9 of 12); @include omega; }
 
-  h3 {
-    color: #686868;
-    font-size: 20pt;
-    font-weight: 300;
-    line-height: 26pt;
-    margin-bottom: 20px;
-    font-family: $title;
-    text-align: center;
-  }
+    .post-image img {
+        height: auto;
+        max-width: 100% !important;
 
-  hr {
-    border: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
-    display: block;
-    margin: 50px auto 40px auto;
-    width: 150px;
-  }
-
-  ul {
-    margin-top: -20px;
-    margin-bottom: 40px;
-  }
-
-  blockquote {
-    p {
-      border-left: 3px solid #ccc;
-      padding-left: 18px;
-      color: #686868;
-      font-size: 22pt;
-      line-height: 28pt;
-      text-align: left;
-      font-style: italic;
-      font-weight: 100;
-
-      &::before {
-        content: "“";
-      }
+        &:hover { opacity: 0.9; }
     }
-  }
 
-  p, li, a {
-    color: #282828;
-    font-size: 22px;
-    line-height: 33px;
-    font-family: $bread;
-    font-weight: normal;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  strong {
-    color: #000;
-    font-weight: bold;
-  }
-
-  p {
-    margin: 0 0 40px 0;
-
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+    .title, .title a {
+        color: #000;
+        font: $black;
+        font-size: 38pt;
+        margin: 0;
     }
-  }
 
-  figure {
-    position: relative;
-    text-align: center;
-    margin-bottom: 20px;
-
-    figcaption {
-      font-family: $caption;
-      font-style: italic;
-      font-size: 11pt;
-      left: -185px;
-      position: absolute;
-      text-align: right;
-      top: 0;
-      width: 175px;
-
-      &::before {
-        border-top: 1px solid #ccc;
-        content: "";
-        display: block;
-        margin-bottom: 10px;
-        margin-left: 70%;
-        width: 30%;
-      }
+    .tagline {
+        color: rgb(34, 34, 34);
+        font: $bread;
+        font-size: 20pt;
+        margin: 5px 0 20px 0 ;
     }
-  }
 
-  h3.tagline {
-    color: #686868;
-    font-family: $title;
-    font-size: 19pt;
-    line-height: 28pt;
-    // font-weight: 100;
-  }
-
-  .actions {
     .button {
-      margin-right: 20px;
+        color: #393939;
     }
-  }
 }
