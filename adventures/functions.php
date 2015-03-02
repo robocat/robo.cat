@@ -1,5 +1,18 @@
 <?php
 
+add_action('generate_rewrite_rules', 'rk_roots_add_rewrites');
+
+function rk_roots_add_rewrites($content) {
+  $theme_name = next(explode('/themes/', get_stylesheet_directory()));
+  global $wp_rewrite;
+  $roots_new_non_wp_rules = array(
+    'css/(.*)'      => 'wp-content/themes/'. $theme_name . '/css/$1',
+    'js/(.*)'       => 'wp-content/themes/'. $theme_name . '/js/$1',
+    'img/(.*)'      => 'wp-content/themes/'. $theme_name . '/img/$1',
+  );
+  $wp_rewrite->non_wp_rules += $roots_new_non_wp_rules;
+}
+
 // Add meta boxes for posts
 
 add_filter('rwmb_meta_boxes', 'rk_register_meta_boxes');
