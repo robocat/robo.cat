@@ -28,7 +28,12 @@ function rk_roots_add_rewrites($content) {
   $wp_rewrite->non_wp_rules += $roots_new_non_wp_rules;
 }
 
-add_action('admin_init', 'roots_flush_rewrites');
+function rk_flush_rewrites() {
+  global $wp_rewrite;
+  $wp_rewrite->flush_rules();
+}
+
+add_action('admin_init', 'rk_flush_rewrites');
 add_action('generate_rewrite_rules', 'rk_roots_add_rewrites');
 
 // Add meta boxes for posts
