@@ -42,7 +42,7 @@
 	                    </a>
 					</div>
 					<div class="content">
-						<h2><a href="<?php the_permalink(); ?>" class="title" rel="bookmark" title="Permalink"><?php the_title(); ?></a></h2>
+						<h2 class="title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permalink"><?php the_title(); ?></a></h2>
 						<p class="tagline"><?php rk_post_tagline(); ?></p>
 
                         <a href="<?php the_permalink(); ?>" class="button dark adventure">Go on this adventure →</a>
