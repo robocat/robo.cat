@@ -13,7 +13,7 @@ if(have_posts()) : the_post();
 
 ?>
 
-<div class="header-container cont single-post-header" id="header-container"<?php echo $style; ?>>
+<div class="navigation-container cont single-post-navigation">
 	<nav class="navigation">
 		<div class="navigation-inner">
 			<div class="left">
@@ -35,11 +35,13 @@ if(have_posts()) : the_post();
 			</div>
 		</div>
 	</nav>
+</div>
 
+<div class="header-container cont single-post-header" id="header-container"<?php echo $style; ?>>
 	<header class="post-header int">
-		<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permalink"><?php the_title(); ?></a></h2>
-		<?php rk_post_tagline(); ?>
-	</header>
+		<h1 class="title"><?php the_title(); ?></h1>
+		<p class="tagline"><?php rk_post_tagline(); ?></p>
+	</header><!-- /header -->
 </div>
 
 <div class="adventures-container cont">

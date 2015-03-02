@@ -4,6 +4,8 @@ fitHeader = ->
 stickyMenu = ->
 	$navigation = $(".navigation")
 	origin = $('.header-container').height() - $navigation.height()
+	if $navigation.hasClass 'topstick'
+		origin = 0
 	if $(window).scrollTop() > origin + 1
 		$navigation.addClass "sticky"
 	else
