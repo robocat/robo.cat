@@ -140,7 +140,8 @@ gulp.task 'html', ->
 	data = {
 		config: config,
 		site: site,
-		apps: require('./apps.json')
+		apps: require('./apps.json'),
+		team: require('./team.json')
 	}
 
 	template_data = {

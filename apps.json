@@ -9,7 +9,9 @@
 
 		"download": "https://itunes.apple.com/us/app/breaking-news-in-your-today/id953959186?ls=1&mt=8",
 		"adventure": true,
-		"website": "itsbreaking.com"
+		"website": "itsbreaking.com",
+
+		"collaboration": false
 	},
 	{
 		"class": "bemyeyes",
@@ -21,7 +23,13 @@
 
 		"download": "https://itunes.apple.com/dk/app/be-my-eyes-helping-blind-see/id905177575?mt=8",
 		"adventure": true,
-		"website": "bemyeyes.org"
+		"website": "bemyeyes.org",
+
+		"collaboration": {
+			"title": "In collaboration with the non-profit Be My Eyes",
+			"website": "http://bemyeyes.org/",
+			"image": "app-bemyeyes-collab.png"
+		}
 	},
 	{
 		"class": "wordbase",
@@ -33,7 +41,31 @@
 
 		"download": "https://itunes.apple.com/app/id777638764?mt=8",
 		"adventure": false,
-		"website": "wordbaseapp.com"
+		"website": "wordbaseapp.com",
+
+		"collaboration": {
+			"title": "Built for Aller",
+			"website": "http://aller.dk/",
+			"image": "app-wordbase-collab.png"
+		}
+	},
+	{
+		"class": "thermodo",
+		"icon": "app-thermodo-icon.png",
+		"theme": "light",
+
+		"name": "Thermodo",
+		"tagline": "The tiny thermometer for your smartphone",
+
+		"download": "https://itunes.apple.com/us/app/thermodo/id739181884?mt=8",
+		"adventure": false,
+		"website": "thermodo.com",
+
+		"collaboration": {
+			"title": "A famous Kickstarter",
+			"website": "https://www.kickstarter.com/projects/robocat/thermodo-the-tiny-thermometer-for-mobile-devices",
+			"image": "app-thermodo-collab.png"
+		}
 	},
 	{
 		"class": "haze",
@@ -45,6 +77,72 @@
 
 		"download": "https://itunes.apple.com/app/haze/id594476963?ls=1&mt=8",
 		"adventure": false,
-		"website": "gethaze.com"
+		"website": "gethaze.com",
+
+		"collaboration": {
+			"title": "In collaboration with Taptanium",
+			"website": "http://taptanium.com/",
+			"image": "app-haze-collab.png"
+		}
+	},
+	{
+		"class": "televised",
+		"icon": "app-televised-icon.png",
+		"theme": "light",
+
+		"name": "Televised",
+		"tagline": "Track your favorite TV Shows",
+
+		"download": "http://itunes.apple.com/app/televised-tv-shows-weekly/id581289923?ls=1&mt=8",
+		"adventure": false,
+		"website": "televisedapp.com",
+
+		"collaboration": false
+	},
+	{
+		"class": "thermo",
+		"icon": "app-thermo-icon.png",
+		"theme": "light",
+
+		"name": "Thermo",
+		"tagline": "The simple approach to weather",
+
+		"download": "http://itunes.apple.com/app/thermo/id414215658?mt=8",
+		"adventure": false,
+		"website": "thermo.me",
+
+		"collaboration": false
+	},
+	{
+		"class": "airborne",
+		"icon": "app-airborne-icon.png",
+		"theme": "light",
+
+		"name": "101 Airborne",
+		"tagline": "Intense 3D top-scrolling arcade action",
+
+		"download": "http://itunes.apple.com/app/101-airborne/id531317549?ls=1&mt=8",
+		"adventure": false,
+		"website": "play101airborne.com",
+
+		"collaboration": {
+			"title": "In collaboration with Blind",
+			"website": "http://www.blindesign.dk/",
+			"image": "app-airborne-collab.png"
+		}
+	},
+	{
+		"class": "treasuretrouble",
+		"icon": "app-treasuretrouble-icon.png",
+		"theme": "light",
+
+		"name": "Treasure Trouble",
+		"tagline": "Worlds first action tracking puzzler",
+
+		"download": "http://itunes.apple.com/app/treasure-trouble/id484542231?ls=1&mt=8",
+		"adventure": false,
+		"website": "thermo.me",
+
+		"collaboration": false
 	}
 ]

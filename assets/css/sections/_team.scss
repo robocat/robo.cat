@@ -1,0 +1,58 @@
+.team {
+	.member {
+		@include span-columns(4 of 12);
+		&:nth-child(3n) { @include omega};
+		text-align: center;
+		margin-bottom: 60px;
+
+		$lightGray: rgb(143, 143, 143);
+		$darkGray: rgb(54, 54, 54);
+
+		.name {
+			color: $darkGray;
+			font: $black;
+			font-size: 24pt;
+			margin: 5px 0 0 0;
+		}
+
+		.role {
+			color: $lightGray;
+			font-size: 15pt; 
+			margin: 5px 0 0 0;
+		}
+
+		a {
+			background-repeat: no-repeat;
+			color: $lightGray;
+			font-size: 13pt;
+
+			&:hover {
+				color: $darkGray;
+			}
+
+			&.twitter {
+				@include retina-image("button-team-twitter", 23px 19px);
+				padding-left: 28px;
+			}
+
+			&.website {
+				@include retina-image("button-team-website", 20px 20px);
+				padding-left: 25px;
+			}
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 20px 0 0 0;
+		}
+
+		li {
+			display: inline;
+			margin: 0 5px;
+
+			&:first-child { margin-left: 0; }
+			&:last-child { margin-right: 0; }
+		}
+	}
+}

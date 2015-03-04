@@ -20,7 +20,7 @@
 				<a href="#products" id="nav-products">Products</a>
 				<a href="#team" id="nav-team">Team</a>
 				<a href="//adventures.robo.cat/" id="nav-adventures">Adventures</a>
-				<a href="#get-in-touch" id="nav-getintouch">Get in touch</a>
+				<a href="#footer" id="nav-getintouch">Get in touch</a>
 				<a href="#share" id="share-tw" class="twitter">
 					{{{ img "navigation-twitter.png" }}}
 				</a>
@@ -41,6 +41,7 @@
 <div class="products" id="products">
 	{{#each apps}}
 		<div class="app-container cont {{ this.class }}">
+			<div class="unblur"></div>
 			<section class="app int {{ this.theme }}">
 				<a href="//{{ this.website }}" class="icon-link">
 					{{{ img this.icon }}}
@@ -64,10 +65,72 @@
 						</li>
 					</ul>
 				</nav>
+
+				{{#if this.collaboration}}
+					<a class="collab" href="{{ this.collaboration.website }}" title="{{ this.collaboration.title }}">
+						{{{ img this.collaboration.image }}}
+					</a>
+				{{/if}}
 			</section>
 		</div>
 	{{/each}}
 </div>
 
+<div class="aboutus-container cont" id="team">
+	<div class="aboutus int">
+		<p>We're a passionate group of people striving for pixel perfection, the elegant code and the great story</p>
+	</div>
+</div>
+
+<div class="team-container cont">
+	<div class="team int">
+		{{#each team}}
+			<div class="member">
+				{{{ img this.avatar }}}
+				<p class="name">{{ this.name }}</p>
+				<p class="role">{{ this.role }}</p>
+				<nav>
+					<ul>
+						{{#if this.twitter}}
+						<li><a class="twitter" href="//twitter.com/{{ this.twitter }}" title="{{ this.name }} on Twitter">{{ this.twitter }}</a></li>
+						{{/if}}
+						{{#if this.website}}
+						<li><a class="website" href="//twitter.com/{{ this.website }}" title="{{ this.name }}'s website">{{ this.website }}</a></li>
+						{{/if}}
+					</ul>
+				</nav>
+			</div>
+		{{/each}}
+	</div>
+</div>
+
+<div class="footer-container cont" id="footer">
+	<div class="footer int">
+		<div class="location">
+			<a class="map" href="https://www.google.dk/maps/place/Pilestr%C3%A6de+43,+1112+K%C3%B8benhavn+K/@55.6811462,12.579215,17z/data=!3m1!4b1!4m2!3m1!1s0x46525310a82927d1:0xa3f8d542574de862?hl=en">
+				{{{ img "footer-map.png" }}}
+			</a>
+			<p class="company">Robocat</p>
+			<p class="address">
+				Pilestaede 43, 2nd Floor<br>
+				1112 Copenhagen<br>
+				Denmark
+			</p>
+		</div>
+		<div class="getintouch">
+			<a href="//twitter.com/robocat/"
+				class="button twitter"
+				onClick="">@robocat</a>
+
+			<a href="//facebook.com/robocatapss/"
+			class="button facebook"
+			onClick="">/robocatapps</a>
+
+			<a href="mailto:hello@robo.cat"
+				class="button email"
+				onClick="">hello@robo.cat</a>
+		</div>
+	</div>
+</div>
 
 {{> footer }}

@@ -1,0 +1,40 @@
+.footer-container {
+	background-color: rgb(238, 238, 238);
+}
+
+.footer {
+	padding: 50px 0;
+
+	.location {
+		float: left;
+
+		.map {
+			float: left;
+			margin-right: 30px;
+		}
+
+		.company {
+			font: $black;
+			font-size: 16pt;
+			margin: 0px 0 5px 0;
+			padding-top: 40px;
+		}
+
+		.address {
+			margin: 0;
+			color: rgb(130, 130, 130);
+			font-size: 12pt;
+		}
+	}
+
+	.getintouch {
+		float: right;
+
+		.button {
+			display: block;
+			color: rgb(45, 43, 39);
+			font: $black;
+			font-size: 16pt;
+		}
+	}
+}

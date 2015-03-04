@@ -1,17 +1,40 @@
-$apps: "breaking" "bemyeyes" "wordbase" "haze";
+$apps: "breaking" "bemyeyes" "wordbase" "haze" "televised" "airborne" "treasuretrouble" "thermodo" "thermo";
 
 .app-container {
-	background-position: center center;
-	background-size: cover;
+	position: relative;
 	text-align: center;
 
+	&, .unblur {
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.unblur {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		opacity: 0;
+		@include transition(opacity 0.4s ease-in-out);
+	}
+
+	&:hover .unblur {
+		opacity: 1;
+	}
+
 	@each $app in $apps {
-		&.#{$app} { background-image: image-url("app-#{$app}-background.jpg"); }
+		$blurred: image-url("app-#{$app}-background-blur.jpg");
+		$image: image-url("app-#{$app}-background.jpg");
+		&.#{$app} { background-image: $blurred; }
+		&.#{$app} .unblur { background-image: $image }
 	}
 }
 
 .app {
 	padding: 115px 10px;
+	position: relative;
 
 	&.light {
 		.name, .tagline, .button { color: #fff; }
@@ -35,6 +58,11 @@ $apps: "breaking" "bemyeyes" "wordbase" "haze";
 		font: $regular;
 		font-size: 22pt;
 		margin: 0 0 40px 0;
+	}
+
+	.collab {
+		display: block;
+		margin: 60px auto 0 auto;
 	}
 
 	ul {

@@ -18,6 +18,8 @@ $shopify: false;
 @import "sections/_aboutus";
 @import "sections/_apps";
 @import "sections/_adventures";
+@import "sections/_team";
+@import "sections/_footer";
 
 .cont {
 	width: 100%;
@@ -35,10 +37,12 @@ a {
 
 h1, h2, h3, h4 {
 	font: $black;
+	-webkit-font-smoothing: antialiased;
 }
 
 p, span, a {
 	font: $regular;
+	-webkit-font-smoothing: antialiased;
 }
 
 .button {

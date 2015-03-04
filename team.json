@@ -1,0 +1,63 @@
+[
+	{
+		"name": "Willi Wu",
+		"role": "Founder & Lead Developer",
+		"avatar": "team-willi.jpg",
+		"twitter": "williwu",
+		"website": "icelantern.com"
+	},
+	{
+		"name": "Michael Flarup",
+		"role": "Founder & Lead Designer",
+		"avatar": "team-michael.jpg",
+		"twitter": "flarup",
+		"website": "pixelresort.com"
+	},
+	{
+		"name": "Ulrik Damm",
+		"role": "iOS & OS X Developer",
+		"avatar": "team-ulrik.jpg",
+		"twitter": "ulrikdamm",
+		"website": "ufd.dk"
+	},
+	{
+		"name": "Kristian Andersen",
+		"role": "iOS & Frontend Developer",
+		"avatar": "team-kristian.jpg",
+		"twitter": "ksmandersen",
+		"website": "kristian.co"
+	},
+	{
+		"name": "Simon Støvring",
+		"role": "iOS & OS X Developer",
+		"avatar": "team-simon.jpg",
+		"twitter": "simonbs",
+		"website": "simonbs.dk"
+	},
+	{
+		"name": "Charlotte Jørgensen",
+		"role": "Office Manager & Support",
+		"avatar": "team-charlotte.jpg",
+		"twitter": false,
+		"website": false
+	},
+	{
+		"name": "Vladimir Keleshev",
+		"role": "Backend & OS X Developer",
+		"avatar": "team-vladimir.jpg",
+		"twitter": "keleshev",
+		"website": "keleshev.com"
+	},
+	{
+		"name": "Andor Uhlár",
+		"role": "Backend Developer",
+		"avatar": "team-andor.jpg",
+		"twitter": "andor44"
+	},
+	{
+		"name": "Emil Baehr",
+		"role": "Designer",
+		"avatar": "team-emil.jpg",
+		"twitter": "ebaehr"
+	}
+]

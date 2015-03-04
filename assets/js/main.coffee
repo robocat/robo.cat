@@ -24,7 +24,6 @@ $(document).ready ->
 	fitHeader()
 	stickyMenu()
 
-	$("#nav-products").click (e) -> navigateTo e, "#products", ->
-		navigateTo ""
+	$("#nav-products").click (e) -> navigateTo e, "#products"
 	$("#nav-team").click (e) -> navigateTo e, "#team"
-	$("#nav-getintouch").click (e) -> navigateTo e, "#getintouch"
+	$("#nav-getintouch").click (e) -> navigateTo e, "#footer"

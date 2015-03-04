@@ -14,11 +14,21 @@ article {
     margin-bottom: 40px;
     padding-bottom: 20px;
 
+    h2 {
+        font: $black;
+        font-size: 20pt;
+        margin-top: 80px;
+    }
+
     p {
         font: $bread;
         font-size: 16pt;
         line-height: 1.5em;
         margin-bottom: 30px;
+    }
+
+    p, h2, li, a {
+        -webkit-font-smoothing: antialiased;
     }
 
     strong {
@@ -40,7 +50,12 @@ article {
     figure {
         position: relative;
         text-align: center;
-        margin-bottom: 20px;
+        margin: 40px 0;
+
+        img {
+            width: 770px;
+            max-width: none;
+        }
 
         figcaption {
             font: $caption;
