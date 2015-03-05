@@ -35,8 +35,9 @@
 
 	.tagline {
 		font: $thin;
-		font-size: 38pt;
+		font-size: 34pt;
 		margin-top: 0;
+		-webkit-font-smoothing: auto;
 	}
 }
 
@@ -114,6 +115,9 @@
 
 		a {
 			margin-right: 50px;
+			font: $black;
+			font-size: 14pt;
+			line-height: 90px;
 
 			&.twitter {
 				margin-right: 20px;

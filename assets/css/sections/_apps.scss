@@ -48,6 +48,7 @@ $apps: "breaking" "bemyeyes" "wordbase" "haze" "televised" "airborne" "treasuret
 	.icon-link {
 		display: block;
 		margin: 0 auto;
+		width: 205px;
 	}
 
 	.name {
@@ -63,6 +64,11 @@ $apps: "breaking" "bemyeyes" "wordbase" "haze" "televised" "airborne" "treasuret
 	.collab {
 		display: block;
 		margin: 60px auto 0 auto;
+		
+		img {
+			max-width: 90% !important;
+			height: auto;
+		}
 	}
 
 	ul {
@@ -77,6 +83,91 @@ $apps: "breaking" "bemyeyes" "wordbase" "haze" "televised" "airborne" "treasuret
 
 		&:first-child { margin-left: 0; }
 		&:last-child { margin-right: 0; }
+	}
+}
+
+.half-app {
+	margin-top: 30px;
+	padding: 0 10px;
+
+	.app {
+		@include span-columns(6 of 12);
+		&:nth-child(2n) { @include omega; }
+		text-align: center;
+		padding: 80px 0;
+
+		.icon-link {
+			height: 205px;
+			width: 205px;
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
+
+.quarter-app {
+	margin-top: 30px;
+	padding: 0 10px;
+
+	.app {
+		@include span-columns(3 of 12);
+		&:nth-child(4n) { @include omega; }
+		text-align: center;
+		padding: 40px 0;
+
+		.icon-link {
+			height: 160px;
+			width: 160px;
+		}
+	}
+}
+
+@include media(max-width 970px) {
+	.half-app {
+		.app {
+			.title {
+				font-size: 36pt;
+			}
+
+			.tagline {
+				font-size: 16pt;
+			}
+		}
+	}
+
+	.quarter-app {
+		.app {
+			padding: 20px 0;
+		}
+	}
+}
+
+@include media(max-width 800px) {
+	.quarter-app {
+		.app {
+			@include span-columns(6 of 12);
+			&:nth-child(2n){
+				@include omega;
+			}
+
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@include media(max-width 720px) {
+	.half-app {
+		.app {
+			@include span-columns(12 of 12);
+			@include omega;
+
+			&:first-child {
+				margin-bottom: 20px;
+			}
+		}
 	}
 }
 
@@ -113,3 +204,13 @@ $apps: "breaking" "bemyeyes" "wordbase" "haze" "televised" "airborne" "treasuret
 		}
 	}
 }
+
+@include media(max-width 420px) {
+	.quarter-app {
+		.app {
+			@include span-columns(12 of 12);
+			@include omega;
+		}
+	}
+}
+

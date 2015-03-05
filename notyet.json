@@ -1,0 +1,14 @@
+{
+		"class": "breaking",
+		"icon": "app-breaking-icon.png",
+		"theme": "dark",
+
+		"name": "Breaking",
+		"tagline": "News in your today tab",
+
+		"download": "https://itunes.apple.com/us/app/breaking-news-in-your-today/id953959186?ls=1&mt=8",
+		"adventure": false,
+		"website": "itsbreaking.com",
+
+		"collaboration": false
+	}

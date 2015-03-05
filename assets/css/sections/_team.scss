@@ -56,3 +56,21 @@
 		}
 	}
 }
+
+@include media(max-width 825px) {
+	.team {
+		.member {
+			@include span-columns(6 of 12);
+			&:nth-child(2n) { @include omega; }
+		}
+	}
+}
+
+@include media(max-width 525px) {
+	.team {
+		.member {
+			@include span-columns(12 of 12);
+			@include omega;
+		}
+	}
+}

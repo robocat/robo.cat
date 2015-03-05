@@ -1,148 +1,202 @@
-[
-	{
-		"class": "breaking",
-		"icon": "app-breaking-icon.png",
-		"theme": "dark",
+{
+	"full": [
+		{
+			"class": "bemyeyes",
+			"icon": "app-bemyeyes-icon.png",
+			"theme": "light",
 
-		"name": "Breaking",
-		"tagline": "News in your today tab",
+			"name": "Be My Eyes",
+			"tagline": "Lend your eyes to the blind",
 
-		"download": "https://itunes.apple.com/us/app/breaking-news-in-your-today/id953959186?ls=1&mt=8",
-		"adventure": true,
-		"website": "itsbreaking.com",
+			"download": "https://itunes.apple.com/dk/app/be-my-eyes-helping-blind-see/id905177575?mt=8",
+			"adventure": false,
+			"website": "bemyeyes.org",
 
-		"collaboration": false
-	},
-	{
-		"class": "bemyeyes",
-		"icon": "app-bemyeyes-icon.png",
-		"theme": "light",
+			"collaboration": {
+				"title": "In collaboration with the non-profit Be My Eyes",
+				"website": "http://bemyeyes.org/",
+				"image": "app-bemyeyes-collab.png"
+			}
+		},
+		{
+			"class": "wordbase",
+			"icon": "app-wordbase-icon.png",
+			"theme": "light",
 
-		"name": "Be My Eyes",
-		"tagline": "Lend your eyes to the blind",
+			"name": "Wordbase",
+			"tagline": "Push your vocabulary tot the limit",
 
-		"download": "https://itunes.apple.com/dk/app/be-my-eyes-helping-blind-see/id905177575?mt=8",
-		"adventure": true,
-		"website": "bemyeyes.org",
+			"download": "https://itunes.apple.com/app/id777638764?mt=8",
+			"adventure": false,
+			"website": "wordbaseapp.com",
 
-		"collaboration": {
-			"title": "In collaboration with the non-profit Be My Eyes",
-			"website": "http://bemyeyes.org/",
-			"image": "app-bemyeyes-collab.png"
+			"collaboration": {
+				"title": "Built for Aller",
+				"website": "http://aller.dk/",
+				"image": "app-wordbase-collab.png"
+			}
+		},
+		{
+			"class": "thermodo",
+			"icon": "app-thermodo-icon.png",
+			"theme": "light",
+
+			"name": "Thermodo",
+			"tagline": "The tiny thermometer for your smartphone",
+
+			"download": "https://itunes.apple.com/us/app/thermodo/id739181884?mt=8",
+			"adventure": false,
+			"website": "thermodo.com",
+
+			"collaboration": {
+				"title": "A famous Kickstarter",
+				"website": "https://www.kickstarter.com/projects/robocat/thermodo-the-tiny-thermometer-for-mobile-devices",
+				"image": "app-thermodo-collab.png"
+			}
+		},
+		{
+			"class": "haze",
+			"icon": "app-haze-icon.png",
+			"theme": "light",
+
+			"name": "Haze",
+			"tagline": "Put some color on your forecast",
+
+			"download": "https://itunes.apple.com/app/haze/id594476963?ls=1&mt=8",
+			"adventure": false,
+			"website": "gethaze.com",
+
+			"collaboration": {
+				"title": "In collaboration with Taptanium",
+				"website": "http://taptanium.com/",
+				"image": "app-haze-collab.png"
+			}
+		},
+		{
+			"class": "televised",
+			"icon": "app-televised-icon.png",
+			"theme": "light",
+
+			"name": "Televised",
+			"tagline": "Track your favorite TV Shows",
+
+			"download": "http://itunes.apple.com/app/televised-tv-shows-weekly/id581289923?ls=1&mt=8",
+			"adventure": false,
+			"website": "televisedapp.com",
+
+			"collaboration": false
+		},
+		{
+			"class": "thermo",
+			"icon": "app-thermo-icon.png",
+			"theme": "light",
+
+			"name": "Thermo",
+			"tagline": "The simple approach to weather",
+
+			"download": "http://itunes.apple.com/app/thermo/id414215658?mt=8",
+			"adventure": false,
+			"website": "thermo.me",
+
+			"collaboration": false
+		},
+		{
+			"class": "airborne",
+			"icon": "app-airborne-icon.png",
+			"theme": "light",
+
+			"name": "101 Airborne",
+			"tagline": "Intense 3D top-scrolling arcade action",
+
+			"download": "http://itunes.apple.com/app/101-airborne/id531317549?ls=1&mt=8",
+			"adventure": false,
+			"website": "play101airborne.com",
+
+			"collaboration": {
+				"title": "In collaboration with Blind",
+				"website": "http://www.blindesign.dk/",
+				"image": "app-airborne-collab.png"
+			}
+		},
+		{
+			"class": "treasuretrouble",
+			"icon": "app-treasuretrouble-icon.png",
+			"theme": "light",
+
+			"name": "Treasure Trouble",
+			"tagline": "Worlds first action tracking puzzler",
+
+			"download": "http://itunes.apple.com/app/treasure-trouble/id484542231?ls=1&mt=8",
+			"adventure": false,
+			"website": "thermo.me",
+
+			"collaboration": false
 		}
-	},
-	{
-		"class": "wordbase",
-		"icon": "app-wordbase-icon.png",
-		"theme": "light",
+	],
+	"half": [
+		{
+			"class": "outside",
+			"icon": "app-outside-icon.png",
+			
+			"background": "#277ea9",
 
-		"name": "Wordbase",
-		"tagline": "Push your vocabulary tot the limit",
+			"name": "Outside",
+			"tagline": "Reinventing the Weather Forecast",
 
-		"download": "https://itunes.apple.com/app/id777638764?mt=8",
-		"adventure": false,
-		"website": "wordbaseapp.com",
+			"download": false,
+			"adventure": false,
+			"website": "outsideapp.com"
+		},
+		{
+			"class": "ultraviolet",
+			"icon": "app-ultraviolet-icon.png",
+			
+			"background": "#951d57",
 
-		"collaboration": {
-			"title": "Built for Aller",
-			"website": "http://aller.dk/",
-			"image": "app-wordbase-collab.png"
+			"name": "Ultraviolet",
+			"tagline": "The worlds sexiest UV meter",
+
+			"download": "http://itunes.apple.com/dk/app/ultraviolet-uv-index/id445874481?l=da&mt=8",
+			"adventure": false,
+			"website": false
 		}
-	},
-	{
-		"class": "thermodo",
-		"icon": "app-thermodo-icon.png",
-		"theme": "light",
+	],
+	"quarter": [
+		{
+			"class": "dunk",
+			"icon": "app-dunk-icon.png",
+			
+			"background": "#083763",
 
-		"name": "Thermodo",
-		"tagline": "The tiny thermometer for your smartphone",
+			"download": "https://itunes.apple.com/app/dunk/id370144266?mt=8",
+			"website": "dunkapp.com"
+		},
+		{
+			"class": "kamera",
+			"icon": "app-kamera-icon.png",
+			
+			"background": "#091643",
 
-		"download": "https://itunes.apple.com/us/app/thermodo/id739181884?mt=8",
-		"adventure": false,
-		"website": "thermodo.com",
+			"download": false,
+			"website": "x.dk"
+		},
+		{
+			"class": "roskilde",
+			"icon": "app-roskilde-icon.png",
+			
+			"background": "#ff6700",
 
-		"collaboration": {
-			"title": "A famous Kickstarter",
-			"website": "https://www.kickstarter.com/projects/robocat/thermodo-the-tiny-thermometer-for-mobile-devices",
-			"image": "app-thermodo-collab.png"
+			"download": "http://itunes.apple.com/app/roskilde-the-unofficial-festival/id378065061?mt=8",
+			"website": "roskildeapp.com"
+		},
+		{
+			"class": "puha",
+			"icon": "app-puha-icon.png",
+			
+			"background": "#194000",
+
+			"download": "http://itunes.apple.com/dk/app/puha!/id482010355?l=da&mt=8",
+			"website": false
 		}
-	},
-	{
-		"class": "haze",
-		"icon": "app-haze-icon.png",
-		"theme": "light",
-
-		"name": "Haze",
-		"tagline": "Put some color on your forecast",
-
-		"download": "https://itunes.apple.com/app/haze/id594476963?ls=1&mt=8",
-		"adventure": false,
-		"website": "gethaze.com",
-
-		"collaboration": {
-			"title": "In collaboration with Taptanium",
-			"website": "http://taptanium.com/",
-			"image": "app-haze-collab.png"
-		}
-	},
-	{
-		"class": "televised",
-		"icon": "app-televised-icon.png",
-		"theme": "light",
-
-		"name": "Televised",
-		"tagline": "Track your favorite TV Shows",
-
-		"download": "http://itunes.apple.com/app/televised-tv-shows-weekly/id581289923?ls=1&mt=8",
-		"adventure": false,
-		"website": "televisedapp.com",
-
-		"collaboration": false
-	},
-	{
-		"class": "thermo",
-		"icon": "app-thermo-icon.png",
-		"theme": "light",
-
-		"name": "Thermo",
-		"tagline": "The simple approach to weather",
-
-		"download": "http://itunes.apple.com/app/thermo/id414215658?mt=8",
-		"adventure": false,
-		"website": "thermo.me",
-
-		"collaboration": false
-	},
-	{
-		"class": "airborne",
-		"icon": "app-airborne-icon.png",
-		"theme": "light",
-
-		"name": "101 Airborne",
-		"tagline": "Intense 3D top-scrolling arcade action",
-
-		"download": "http://itunes.apple.com/app/101-airborne/id531317549?ls=1&mt=8",
-		"adventure": false,
-		"website": "play101airborne.com",
-
-		"collaboration": {
-			"title": "In collaboration with Blind",
-			"website": "http://www.blindesign.dk/",
-			"image": "app-airborne-collab.png"
-		}
-	},
-	{
-		"class": "treasuretrouble",
-		"icon": "app-treasuretrouble-icon.png",
-		"theme": "light",
-
-		"name": "Treasure Trouble",
-		"tagline": "Worlds first action tracking puzzler",
-
-		"download": "http://itunes.apple.com/app/treasure-trouble/id484542231?ls=1&mt=8",
-		"adventure": false,
-		"website": "thermo.me",
-
-		"collaboration": false
-	}
-]
+	]
+}

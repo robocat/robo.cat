@@ -19,7 +19,7 @@
 			<div class="right">
 				<a href="#products" id="nav-products">Products</a>
 				<a href="#team" id="nav-team">Team</a>
-				<a href="//adventures.robo.cat/" id="nav-adventures">Adventures</a>
+				{{!-- <a href="//adventures.robo.cat/" id="nav-adventures">Adventures</a> --}}
 				<a href="#footer" id="nav-getintouch">Get in touch</a>
 				<a href="#share" id="share-tw" class="twitter">
 					{{{ img "navigation-twitter.png" }}}
@@ -39,7 +39,7 @@
 </div>
 
 <div class="products" id="products">
-	{{#each apps}}
+	{{#each apps.full}}
 		<div class="app-container cont {{ this.class }}">
 			<div class="unblur"></div>
 			<section class="app int {{ this.theme }}">
@@ -74,6 +74,53 @@
 			</section>
 		</div>
 	{{/each}}
+
+	<div class="half-app-container cont {{ this.class }}">
+		<section class="half-app int {{ this.theme }}">
+			{{#each apps.half}}
+				<div class="app light" style="background-color: {{this.background}};">
+					<a href="{{#if this.website }}//{{ this.website }}{{else}}{{ this.download }}{{/if}}" class="icon-link">
+						{{{ img this.icon }}}
+					</a>
+				
+					<h2 class="name">{{ this.name }}</h2>
+					<p class="tagline">{{ this.tagline }}</p>
+
+					<nav>
+						<ul>
+							<li>
+								<a href="{{#if this.download }}{{ this.download }}{{else}}#{{/if}}" 
+									class="button download light{{#unless this.download}} retired{{/unless}}" 
+									title="{{ this.name }} on the App Store">Download</a>
+							</li>
+							{{#if this.adventure}}
+								<li>
+									<a href="{{ this.adventure }}" class="button adventure light" title="Read the adventure behind {{ this.name }}">Read the adventure</a>
+								</li>
+							{{/if}}
+							{{#if this.website}}
+							<li>
+								<a href="//{{ this.website }}" class="button website light" title="Visit the website">{{ this.website }}</a>
+							</li>
+							{{/if}}
+						</ul>
+					</nav>
+				</div>
+			{{/each}}
+		</section>
+	</div>
+
+	<div class="quarter-app-container cont {{ this.class }}">
+		<section class="quarter-app int {{ this.theme }}">
+			{{#each apps.quarter}}
+				<div class="app" style="background-color: {{this.background}};">
+					<a href="{{#if this.website }}//{{ this.website }}{{else}}{{ this.download }}{{/if}}" class="icon-link">
+						{{{ img this.icon }}}
+					</a>
+				</div>
+			{{/each}}
+		</section>
+	</div>
 </div>
 
 <div class="aboutus-container cont" id="team">
@@ -95,7 +142,7 @@
 						<li><a class="twitter" href="//twitter.com/{{ this.twitter }}" title="{{ this.name }} on Twitter">{{ this.twitter }}</a></li>
 						{{/if}}
 						{{#if this.website}}
-						<li><a class="website" href="//twitter.com/{{ this.website }}" title="{{ this.name }}'s website">{{ this.website }}</a></li>
+						<li><a class="website" href="//{{ this.website }}" title="{{ this.name }}'s website">{{ this.website }}</a></li>
 						{{/if}}
 					</ul>
 				</nav>
@@ -110,25 +157,27 @@
 			<a class="map" href="https://www.google.dk/maps/place/Pilestr%C3%A6de+43,+1112+K%C3%B8benhavn+K/@55.6811462,12.579215,17z/data=!3m1!4b1!4m2!3m1!1s0x46525310a82927d1:0xa3f8d542574de862?hl=en">
 				{{{ img "footer-map.png" }}}
 			</a>
-			<p class="company">Robocat</p>
-			<p class="address">
-				Pilestaede 43, 2nd Floor<br>
-				1112 Copenhagen<br>
-				Denmark
-			</p>
+			<div class="physical">
+				<p class="company">Robocat</p>
+				<p class="address">
+					Pilestaede 43, 2nd Floor<br>
+					1112 Copenhagen<br>
+					Denmark
+				</p>
+			</div>
 		</div>
 		<div class="getintouch">
 			<a href="//twitter.com/robocat/"
 				class="button twitter"
-				onClick="">@robocat</a>
+				onClick="sendEvent('button', 'clicked', 'social-twitter');">@robocat</a>
 
-			<a href="//facebook.com/robocatapss/"
+			<a href="//facebook.com/robocatapps/"
 			class="button facebook"
-			onClick="">/robocatapps</a>
+			onClick="sendEvent('button', 'clicked', 'social-facebook');">/robocatapps</a>
 
 			<a href="mailto:hello@robo.cat"
 				class="button email"
-				onClick="">hello@robo.cat</a>
+				onClick="sendEvent('button', 'clicked', 'social-email');">hello@robo.cat</a>
 		</div>
 	</div>
 </div>

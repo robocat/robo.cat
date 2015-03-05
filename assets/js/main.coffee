@@ -1,3 +1,8 @@
+delay = (ms, func) -> setTimeout func, ms
+
+sendEvent = (category, action, label = "", value = undefined) ->
+	ga('send', 'event', category, action, label, value) #if typeof ga != 'undefined'
+
 fitHeader = ->
 	$(".header-container.autoresize").css 'height', $(window).height()
 
@@ -13,7 +18,8 @@ stickyMenu = ->
 
 navigateTo = (e, id, done = undefined) ->
 	e.preventDefault()
-	$("html body").animate { scrollTop: $(id).offset().top }, "slow", done
+	offset = $(id).offset().top - $(".navigation").height()
+	$("html body").animate { scrollTop: offset }, "slow", done
 
 $(window).resize -> fitHeader()
 
