@@ -61,6 +61,10 @@ $apps: "breaking" "bemyeyes" "wordbase" "haze" "televised" "airborne" "treasuret
 		margin: 0 0 40px 0;
 	}
 
+	.retired {
+		text-decoration: line-through;
+	}
+
 	.collab {
 		display: block;
 		margin: 60px auto 0 auto;

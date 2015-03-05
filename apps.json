@@ -1,6 +1,20 @@
 {
 	"full": [
 		{
+			"class": "breaking",
+			"icon": "app-breaking-icon.png",
+			"theme": "dark",
+
+			"name": "Breaking",
+			"tagline": "News in your today tab",
+
+			"download": "http://itsbreaking.com",
+			"adventure": false,
+			"website": "itsbreaking.com",
+
+			"collaboration": false
+		},
+		{
 			"class": "bemyeyes",
 			"icon": "app-bemyeyes-icon.png",
 			"theme": "light",
