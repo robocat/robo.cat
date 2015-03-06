@@ -21,15 +21,46 @@ navigateTo = (e, id, done = undefined) ->
 	offset = $(id).offset().top - $(".navigation").height()
 	$("html body").animate { scrollTop: offset }, "slow", done
 
+menuItems = $('.navigation .right a.scrollbased')
+scrollItems = menuItems.map ->
+	item = $($(this).attr('href'))
+	return item if item.length
+
+lastId = null
+
+menuItems.click (e) ->
+	href = $(this).attr('href')
+	if href == "#"
+		offsetTop = 0
+	else
+		offsetTop = $(href).offset().top
+	$('html body').stop().animate {scrollTop: offsetTop}, "slow"
+
+setActiveMenuItem = (fromTop) ->
+	curr = scrollItems.map -> this if $(this).offset().top < fromTop
+
+	curr = curr[curr.length-1]
+	if curr && curr.length
+		id = curr[0].id 
+	else 
+		id = ""
+
+	if lastId != id
+		lastId = id
+		menuItems.removeClass('active')
+		$('.navigation .right a[href=#'+id+']').addClass('active')
+
 $(window).resize -> fitHeader()
 
 $(window).scroll -> 
 	stickyMenu()
 
+	setActiveMenuItem($(window).scrollTop() + $(window).height() - 200)
+
 $(document).ready ->
 	fitHeader()
 	stickyMenu()
 
-	$("#nav-products").click (e) -> navigateTo e, "#products"
-	$("#nav-team").click (e) -> navigateTo e, "#team"
-	$("#nav-getintouch").click (e) -> navigateTo e, "#footer"
+	# $("#nav-products").click (e) -> navigateTo e, "#products"
+	# $("#nav-team").click (e) -> navigateTo e, "#team"
+	# $("#nav-getintouch").click (e) -> navigateTo e, "#footer"

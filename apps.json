@@ -6,9 +6,12 @@
 			"theme": "dark",
 
 			"name": "Breaking",
-			"tagline": "News in your today tab",
+			"tagline": "News in your today view",
 
-			"download": "http://itsbreaking.com",
+			"download": {
+				"ios": "https://itunes.apple.com/us/app/breaking-news-in-your-today/id953959186?ls=1&mt=8",
+				"osx": "https://itunes.apple.com/us/app/breaking-news-in-your-today/id940103986?ls=1&mt=12"
+			},
 			"adventure": false,
 			"website": "itsbreaking.com",
 
@@ -21,8 +24,9 @@
 
 			"name": "Be My Eyes",
 			"tagline": "Lend your eyes to the blind",
-
-			"download": "https://itunes.apple.com/dk/app/be-my-eyes-helping-blind-see/id905177575?mt=8",
+			"download": {
+				"ios": "https://itunes.apple.com/dk/app/be-my-eyes-helping-blind-see/id905177575?mt=8"
+			},
 			"adventure": false,
 			"website": "bemyeyes.org",
 
@@ -40,7 +44,9 @@
 			"name": "Wordbase",
 			"tagline": "Push your vocabulary tot the limit",
 
-			"download": "https://itunes.apple.com/app/id777638764?mt=8",
+			"download": {
+				"ios": "https://itunes.apple.com/app/id777638764?mt=8"
+			},
 			"adventure": false,
 			"website": "wordbaseapp.com",
 
@@ -58,7 +64,9 @@
 			"name": "Thermodo",
 			"tagline": "The tiny thermometer for your smartphone",
 
-			"download": "https://itunes.apple.com/us/app/thermodo/id739181884?mt=8",
+			"download": {
+				"ios": "https://itunes.apple.com/us/app/thermodo/id739181884?mt=8"
+			},
 			"adventure": false,
 			"website": "thermodo.com",
 
@@ -76,7 +84,9 @@
 			"name": "Haze",
 			"tagline": "Put some color on your forecast",
 
-			"download": "https://itunes.apple.com/app/haze/id594476963?ls=1&mt=8",
+			"download": {
+				"ios": "https://itunes.apple.com/app/haze/id594476963?ls=1&mt=8"
+			},
 			"adventure": false,
 			"website": "gethaze.com",
 
@@ -94,7 +104,9 @@
 			"name": "Televised",
 			"tagline": "Track your favorite TV Shows",
 
-			"download": "http://itunes.apple.com/app/televised-tv-shows-weekly/id581289923?ls=1&mt=8",
+			"download": {
+				"ios": "http://itunes.apple.com/app/televised-tv-shows-weekly/id581289923?ls=1&mt=8"
+			},
 			"adventure": false,
 			"website": "televisedapp.com",
 
@@ -108,7 +120,9 @@
 			"name": "Thermo",
 			"tagline": "The simple approach to weather",
 
-			"download": "http://itunes.apple.com/app/thermo/id414215658?mt=8",
+			"download": {
+				"ios": "http://itunes.apple.com/app/thermo/id414215658?mt=8"
+			},
 			"adventure": false,
 			"website": "thermo.me",
 
@@ -122,7 +136,9 @@
 			"name": "101 Airborne",
 			"tagline": "Intense 3D top-scrolling arcade action",
 
-			"download": "http://itunes.apple.com/app/101-airborne/id531317549?ls=1&mt=8",
+			"download": {
+				"ios": "http://itunes.apple.com/app/101-airborne/id531317549?ls=1&mt=8"
+			},
 			"adventure": false,
 			"website": "play101airborne.com",
 
@@ -140,9 +156,11 @@
 			"name": "Treasure Trouble",
 			"tagline": "Worlds first action tracking puzzler",
 
-			"download": "http://itunes.apple.com/app/treasure-trouble/id484542231?ls=1&mt=8",
+			"download": {
+				"ios": "http://itunes.apple.com/app/treasure-trouble/id484542231?ls=1&mt=8"
+			},
 			"adventure": false,
-			"website": "thermo.me",
+			"website": "treasuretrouble.com",
 
 			"collaboration": false
 		}

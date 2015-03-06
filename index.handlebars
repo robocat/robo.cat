@@ -17,14 +17,14 @@
 				</a>
 			</div>
 			<div class="right">
-				<a href="#products" id="nav-products">Products</a>
-				<a href="#team" id="nav-team">Team</a>
+				<a href="#products" id="nav-products" class="scrollbased">Products</a>
+				<a href="#team" id="nav-team" class="scrollbased">Team</a>
 				{{!-- <a href="//adventures.robo.cat/" id="nav-adventures">Adventures</a> --}}
-				<a href="#footer" id="nav-getintouch">Get in touch</a>
-				<a href="#share" id="share-tw" class="twitter">
+				<a href="#footer" id="nav-getintouch" class="scrollbased">Get in touch</a>
+				<a href="//twitter.com/robocat" id="share-tw" class="twitter" target="_blank">
 					{{{ img "navigation-twitter.png" }}}
 				</a>
-				<a href="#share" id="share-fb" class="facebook">
+				<a href="//facebook.com/robocatapps" id="share-fb" class="facebook" target="_blank">
 					{{{ img "navigation-facebook.png" }}}
 				</a>
 			</div>
@@ -34,7 +34,7 @@
 
 <div class="aboutus-container cont">
 	<div class="aboutus int">
-		<p>Each of our adventures are guided by a strong sense of craftsmanship and we're always trying to imbue our products with a sense of wonder. In short – we love building things.</p>
+		<p>Each of our adventures are guided by a strong sense of craftsmanship and we're always trying to imbue our products with a touch of wonder. In short – we love building things.</p>
 	</div>
 </div>
 
@@ -52,9 +52,16 @@
 
 				<nav>
 					<ul>
+						{{#if this.download.ios}}
 						<li>
-							<a href="{{ this.download }}" class="button download {{ this.theme }}" title="{{ this.name }} on the App Store">Download</a>
+							<a href="{{ this.download.ios }}" class="ios button download {{ this.theme }}" title="{{ this.name }} on the App Store">Download{{#if this.download.osx}} for iOS{{/if}}</a>
 						</li>
+						{{/if}}
+						{{#if this.download.osx}}
+						<li>
+							<a href="{{ this.download.osx }}" class="osx button download {{ this.theme }}" title="{{ this.name }} on the App Store">Download{{#if this.download.ios}} for Mac{{/if}}</a>
+						</li>
+						{{/if}}
 						{{#if this.adventure}}
 							<li>
 								<a href="{{ this.adventure }}" class="button adventure {{ this.theme }}" title="Read the adventure behind {{ this.name }}">Read the adventure</a>

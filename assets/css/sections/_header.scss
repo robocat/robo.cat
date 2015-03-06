@@ -126,6 +126,11 @@
 			&.facebook {
 				margin-right: 0;
 			}
+
+			&:hover, &.active {
+				text-decoration: none;
+				border-bottom: 2px solid #fff;
+			}
 		}
 	}
 }
@@ -189,10 +194,12 @@
 }
 
 @include media(max-width 460px) {
-	.header {
+	.header-container .header {
+		background-position: center 100%;
+
 		.cat {
-			margin-top: 50%;
-			max-width: 225px;
+			margin-top: 40px;
+			max-width: 160px;
 		}
 
 		.title {
@@ -200,7 +207,7 @@
 		}
 
 		.tagline {
-			font-size: 20pt;
+			font-size: 24pt;
 		}
 	}
 

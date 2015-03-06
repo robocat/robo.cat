@@ -196,15 +196,15 @@ $apps: "breaking" "bemyeyes" "wordbase" "haze" "televised" "airborne" "treasuret
 		}
 
 		li {
-			&:first-child {
+			// &:first-child {
 				display: block;
 				margin: 25px auto;
-			}
+			// }
 
-			&:nth-child(2n) {
-				margin-left: 0;
-				margin-right: 15px;
-			}
+			// &:nth-child(2n) {
+			// 	margin-left: 0;
+				// margin-right: 15px;
+			// }
 		}
 	}
 }
