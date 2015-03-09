@@ -8,3 +8,7 @@ $italic: italic 400 14pt / 1.2em $lato;
 $bread: normal 400 14pt / 1.2em $freight;
 $caption: italic 400 10pt / 1.2em $freight;
 $title: normal 700 36pt / 1.2em $freight;
+
+input, textarea, select, button {
+  -webkit-font-smoothing: antialiased;
+}

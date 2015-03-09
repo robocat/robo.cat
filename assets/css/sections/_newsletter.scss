@@ -1,0 +1,50 @@
+.newsletter {
+	padding: 130px 10px;
+	text-align: center;
+
+	p {
+		color: #424242;
+		display: block;
+		font: $bread;
+		font-size: 20pt;
+		line-height: 28pt;
+		margin: 0 auto;
+		max-width: 676px;
+	}
+
+	form {
+		margin-top: 30px;
+	}
+
+	.submit {
+		background-color: transparent;
+		background-repeat: no-repeat;
+		border: none;
+		color: transparent;
+		height: 22px;
+		width: 22px;
+		margin: 0 0 0 -38px;
+		@include retina-image("button-newsletter-go", 22px 22px);
+	}
+
+	.email {
+		background-color: transparent;
+		border: 2px solid #b1b1b1;
+		border-radius: 5px;
+		color: #424242;
+		outline: none;
+		padding: 16px 49px 16px 27px;
+		text-align: center;
+
+		@include placeholder {
+			color: #b1b1b1;
+		}
+	}
+
+	.email, .submit {
+		font: $bread;
+		font-size: 18pt;
+		vertical-align: middle;
+		-webkit-font-smoothing: antialized;
+	}
+}

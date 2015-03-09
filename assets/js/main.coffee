@@ -36,7 +36,10 @@ menuItems.click (e) ->
 		offsetTop = $(href).offset().top
 	$('html body').stop().animate {scrollTop: offsetTop}, "slow"
 
-setActiveMenuItem = (fromTop) ->
+setActiveMenuItem = ->
+	$win = $(window)
+	fromTop = $win.scrollTop() + $win.height() - 200
+
 	curr = scrollItems.map -> this if $(this).offset().top < fromTop
 
 	curr = curr[curr.length-1]
@@ -50,17 +53,37 @@ setActiveMenuItem = (fromTop) ->
 		menuItems.removeClass('active')
 		$('.navigation .right a[href=#'+id+']').addClass('active')
 
+handleSignup = (e) ->
+	e.preventDefault()
+
+
+	$emailfield = $('#newsletter_form .email')
+	$submit = $('#newsletter_form .submit')
+
+	return if $emailfield.val() == ""
+
+	$emailfield.attr 'disabled', 'disabled'
+	$emailfield.blur()
+	$submit.attr 'disabled', 'disabled'
+
+	data = { email: $emailfield.val(), list: 'robocat' }
+	url = 'http://newsletters.robocatapps.com/signup'
+
+	$.post url, data, (rep, status, xhr) ->
+		$emailfield.val 'Thank you'
+		console.log data
+	
+
 $(window).resize -> fitHeader()
 
 $(window).scroll -> 
 	stickyMenu()
-
-	setActiveMenuItem($(window).scrollTop() + $(window).height() - 200)
+	setActiveMenuItem()
 
 $(document).ready ->
 	fitHeader()
 	stickyMenu()
 
-	# $("#nav-products").click (e) -> navigateTo e, "#products"
-	# $("#nav-team").click (e) -> navigateTo e, "#team"
-	# $("#nav-getintouch").click (e) -> navigateTo e, "#footer"
+	$("#newsletter_form").on 'submit', (e) -> handleSignup e
+	# $("#newsletter_form .submit").on 'click', (e) -> handleSignup e
+
