@@ -11,7 +11,7 @@ stickyMenu = ->
 	origin = $('.header-container').height() - $navigation.height()
 	if $navigation.hasClass 'topstick'
 		origin = 0
-	if $(window).scrollTop() > origin + 1
+	if $(window).scrollTop() > origin
 		$navigation.addClass "sticky"
 	else
 		$navigation.removeClass "sticky"
