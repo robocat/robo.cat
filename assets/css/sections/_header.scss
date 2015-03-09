@@ -113,6 +113,10 @@
 	.right {
 		float: right;
 
+		.social {
+			display: inline-block;
+		}
+
 		a {
 			margin-right: 50px;
 			font: $black;
@@ -169,24 +173,37 @@
 
 @include media(max-width 550px) {
 	.navigation {
-		height: 130px;
+		height: 85px;
 
 		.navigation-inner {
 			height: auto;
 			padding: 0;
 
 			.right {
-				padding: 0 60px;
+				margin-top: 15px;
 
 				a {
-					margin: 0;
 					line-height: 1.2em;
-					padding: 10px 0;
+					margin: 5px;
+					width: auto;
 
-					@include span-columns(6 of 12);
-					&:nth-child(2n) {
-						@include omega;
+					&:first-child {
+						margin-left: 0;
 					}
+
+					&:nth-child(3) {
+						margin-right: 0;
+					}
+				}
+
+				.social {
+					display: block;
+					margin-top: 10px;
+
+					&:last-child {
+						margin-right: 0;
+					}
+
 				}
 			}
 		}
