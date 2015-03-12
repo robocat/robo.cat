@@ -29,6 +29,8 @@ scrollItems = menuItems.map ->
 lastId = null
 
 menuItems.click (e) ->
+	e.preventDefault()
+	
 	href = $(this).attr('href')
 	if href == "#"
 		offsetTop = 0

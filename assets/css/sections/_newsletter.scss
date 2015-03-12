@@ -48,3 +48,15 @@
 		-webkit-font-smoothing: antialized;
 	}
 }
+
+@include media(max-width 320px) {
+	.newsletter {
+		.email, .submit {
+			font-size: 14pt;
+		}
+
+		.email {
+			padding: 12px 50px 12px 22px;
+		}
+	}
+}

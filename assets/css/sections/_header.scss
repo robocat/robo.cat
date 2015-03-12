@@ -18,7 +18,7 @@
 .header {
 	background-image: image-url("header-background.jpg");
 	background-repeat: no-repeat;
-	background-position: center -15%;
+	background-position: center 25%;
 	color: #fff;
 	height: 100%;
 	text-align: center;
@@ -26,7 +26,7 @@
 	.cat {
 		height: auto;
 		max-width: 100%;
-		margin-top: 15%;
+		margin-top: 25%;
 	}
 
 	.title {
@@ -210,21 +210,24 @@
 	}
 }
 
-@include media(max-width 460px) {
+@include media(max-width 420px) {
 	.header-container .header {
-		background-position: center 100%;
+		// background-position: center 100%;
+		background-size: 440px 320px;
+		background-position: 50% 0%;
+
 
 		.cat {
-			margin-top: 40px;
-			max-width: 160px;
+			margin-top: 60px;
+			max-width: 140px;
 		}
 
 		.title {
-			font-size: 32pt;
+			font-size: 28pt;
 		}
 
 		.tagline {
-			font-size: 24pt;
+			font-size: 20pt;
 		}
 	}
 
@@ -237,18 +240,72 @@
 	}
 }
 
-@include media(max-height 765px) {
-	.header {
+@media only screen and 
+	(min-device-width: 320px) and 
+	(max-device-width: 480px) and
+	(-webkit-device-pixel-ratio: 2) and
+	(device-aspect-ratio: 2/3) and
+	(orientation: portrait ) {
+
+	.header-container .header {
+		// background-position: center 100%;
+		background-size: 320px 241px;
+		background-position: 50% 0%;
+
+
 		.cat {
-			max-width: 250px;
+			margin-top: 30px;
+			max-width: 120px;
 		}
 
 		.title {
-			font-size: 36pt;
+			font-size: 22pt;
 		}
 
 		.tagline {
-			font-size: 30pt;
+			font-size: 18pt;
 		}
 	}
 }
+
+@media only screen and 
+	(min-device-width: 320px) and 
+	(max-device-width: 480px) and
+	(orientation: landscape ) {
+		
+	.header-container .header {
+		// background-position: center 100%;
+		background-size: 320px 241px;
+		background-position: 50% -20%;
+
+
+		.cat {
+			margin-top: 30px;
+			max-width: 90px;
+		}
+
+		.title {
+			font-size: 22pt;
+		}
+
+		.tagline {
+			font-size: 18pt;
+		}
+	}
+}
+
+// @include media(max-height 765px) {
+// 	.header {
+// 		.cat {
+// 			max-width: 250px;
+// 		}
+
+// 		.title {
+// 			font-size: 36pt;
+// 		}
+
+// 		.tagline {
+// 			font-size: 30pt;
+// 		}
+// 	}
+// }
