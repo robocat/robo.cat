@@ -139,6 +139,26 @@
 	}
 }
 
+@include media(max-height 900px) {
+	.header-container .header {
+		.cat {
+			margin-top: 15%;
+		}
+	}
+}
+
+@include media(max-height 770px) {
+	.header-container .header {
+		background-position: 50% -80%;
+
+		.cat {
+			margin-top: 5%;
+		}
+	}
+}
+
+
+
 @include media(max-width 930px) {
 	.navigation {
 		.navigation-inner {
