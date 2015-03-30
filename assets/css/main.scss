@@ -48,6 +48,14 @@ p, span, a {
 .button {
 	background-position: 0px center;
 	background-repeat: no-repeat;
+
+	&.light {
+		color: #fff;
+	}
+
+	&.dark {
+		color: #393939;
+	}
 }
 
 $themes: "dark" "light";

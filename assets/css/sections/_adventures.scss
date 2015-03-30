@@ -1,6 +1,6 @@
 .single-post {
     @include shift(1);
-    @include span-columns(8 of 12);
+    @include span-columns(7 of 12);
     margin-bottom: 120px;
     padding-left: 60px;
     padding-right: 60px;
@@ -8,6 +8,13 @@
     article {
         margin-bottom: 40px;
     }
+}
+
+.appinfo {
+    @include span-columns(3 of 12);
+    border: 1px solid #000;
+    text-align: center;
+    margin-top: 100px;
 }
 
 article {

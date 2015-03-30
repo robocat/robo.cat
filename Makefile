@@ -50,4 +50,8 @@ deploy:
 	&& s3_website push \
 	&& git push adventures master
 
-.PHONY: theme
+adventures:
+	make theme \
+	&& git push adventures master
+
+.PHONY: theme adventures
