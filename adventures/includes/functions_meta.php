@@ -56,7 +56,7 @@ function rk_meta_image() {
 	}
 }
 
-function rk_meta_descripion() {
+function rk_meta_description() {
 	$tagline = rk_post_tagline(false);
 	if (!empty($tagline)) {
 		echo $tagline;
