@@ -41,7 +41,7 @@
                         <a href="//robo.cat/#products" id="nav-products">Products</a>
                         <a href="//robo.cat/#team" id="nav-team">Team</a>
                         <a href="//adventures.robo.cat/" id="nav-adventures">Adventures</a>
-                        <a href="#get-in-touch" id="nav-getintouch" class="scrollbased">Get in touch</a>
+                        <a href="#footer" id="nav-getintouch" class="scrollbased">Get in touch</a>
                         <a href="#share" id="share-tw" class="twitter">
                             <?php rk_img("navigation-twitter.png"); ?>
                         </a>
