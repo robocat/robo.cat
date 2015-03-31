@@ -12,9 +12,33 @@
 
 .appinfo {
     @include span-columns(3 of 12);
-    border: 1px solid #000;
-    text-align: center;
+    border: 1px solid rgb(211, 211, 211);
     margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+
+    .title {
+        margin-bottom: 40px;
+        font: $black;
+        font-size: 18pt;
+    }
+
+    .appicon {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 25px auto 0 auto;
+
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .button {
+        display: inline-block;
+        margin-bottom: 15px;
+    }
 }
 
 article {
@@ -138,3 +162,49 @@ article {
         color: #393939;
     }
 }
+
+@include media(max-width 1230px) {
+    article figure {
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            left: auto;
+            position: relative;
+            text-align: left;
+            top: auto;
+            width: auto;
+
+            &::before {
+                margin-top: 5px;
+                margin-left: initial;
+                width: 20%;
+            }
+        }
+    }
+}
+
+@include media(max-width 840px) {
+    .single-post {
+        @include shift(0)
+    }
+
+    .appinfo {
+        @include span-columns(4 of 12);       
+    }
+}
+
+@include media(max-width 700px) {
+    .single-post {
+        @include span-columns(12 of 12);
+        @include omega;
+    }
+
+    .appinfo {
+        display: none;
+    }
+
+    
+}
+
