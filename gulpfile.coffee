@@ -53,7 +53,7 @@ paths = {
 	handlebars: "**/*.handlebars",
 	sass: "assets/css/**/*.{scss,sass}",
 	coffee: "assets/js/**/*.coffee",
-	js: "assets/js/**/*.js",
+	js: ["assets/js/**/*.js", "components/**/dist/*.js", "!components/**/*.min.js"],
 	images: "assets/images/**/*.{jpg,png}",
 	adventure: "adventures/**/*"
 }
@@ -95,8 +95,9 @@ gulp.task 'jsvendor', ->
 	gulp.src(paths.js)
 		.pipe(sourcemaps.init())
 		.pipe(order([
-			'jquery.js',
-			'retina.js'
+			'components/retinajs/dist/retina.js',
+			'components/jquery/dist/retina.js'
+			'modernizr.js'
 		]))
 		.pipe(concat('vendor.js'))
 		.pipe(gif(config.production, uglify()))
@@ -119,7 +120,7 @@ gulp.task 'copy', ->
 		.pipe(copy(build_path))
 
 gulp.task 'sass', ->
-	sass_paths = ['./assets/css/vendor/bourbon', './assets/css/vendor/neat']
+	sass_paths = ['./components/bourbon/app/assets/stylesheets', './components/neat/app/assets/stylesheets']
 	sass_config = { 
 		includePaths:  sass_paths,
 		imagePath: config.imgpath

@@ -8,5 +8,6 @@
 public
 theme
 node_modules
+components
 
 .env
