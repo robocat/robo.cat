@@ -76,6 +76,9 @@ handleSignup = (e) ->
 		console.log data
 	
 
+removeHoverOnTouch = ->
+	$('body').removeClass 'no-touch' if Modernizr.touch != false
+
 $(window).resize -> fitHeader()
 
 $(window).scroll -> 
@@ -85,6 +88,7 @@ $(window).scroll ->
 $(document).ready ->
 	fitHeader()
 	stickyMenu()
+	removeHoverOnTouch()
 
 	$("#newsletter_form").on 'submit', (e) -> handleSignup e
 	# $("#newsletter_form .submit").on 'click', (e) -> handleSignup e

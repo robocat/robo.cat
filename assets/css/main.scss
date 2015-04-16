@@ -33,7 +33,7 @@ $shopify: false;
 a {
 	text-decoration: none;
 
-	&:hover { text-decoration: underline; }
+	.no-touch &:hover { text-decoration: underline; }
 }
 
 h1, h2, h3, h4 {
