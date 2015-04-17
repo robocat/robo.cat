@@ -9,8 +9,8 @@
 			"tagline": "News in your today view",
 
 			"download": {
-				"ios": "https://itunes.apple.com/us/app/breaking-news-in-your-today/id953959186?ls=1&mt=8",
-				"osx": "https://itunes.apple.com/us/app/breaking-news-in-your-today/id940103986?ls=1&mt=12"
+				"ios": "https://itunes.apple.com/us/app/breaking-news-in-your-today/id953959186?mt=8&uo=6&at=1l3vtDT&ct=",
+				"osx": "https://itunes.apple.com/us/app/breaking-news-in-your-today/id940103986?ls=1&mt=12&uo=6&at=1l3vtDT&ct="
 			},
 			"adventure": false,
 			"website": "itsbreaking.com",
@@ -25,7 +25,7 @@
 			"name": "Be My Eyes",
 			"tagline": "Lend your eyes to the blind",
 			"download": {
-				"ios": "https://itunes.apple.com/dk/app/be-my-eyes-helping-blind-see/id905177575?mt=8"
+				"ios": "https://itunes.apple.com/us/app/be-my-eyes-helping-blind-see/id905177575?mt=8&uo=6&at=1l3vtDT&ct="
 			},
 			"adventure": false,
 			"website": "bemyeyes.org",
@@ -45,7 +45,7 @@
 			"tagline": "Push your vocabulary to the limit",
 
 			"download": {
-				"ios": "https://itunes.apple.com/app/id777638764?mt=8"
+				"ios": "https://itunes.apple.com/us/app/wordbase-fun-word-search-battles/id777638764?mt=8&uo=6&at=1l3vtDT&ct="
 			},
 			"adventure": false,
 			"website": "wordbaseapp.com",
@@ -65,7 +65,7 @@
 			"tagline": "The tiny thermometer for your smartphone",
 
 			"download": {
-				"ios": "https://itunes.apple.com/us/app/thermodo/id739181884?mt=8"
+				"ios": "https://itunes.apple.com/us/app/thermodo/id739181884?mt=8&uo=6&at=1l3vtDT&ct="
 			},
 			"adventure": false,
 			"website": "thermodo.com",
@@ -85,7 +85,7 @@
 			"tagline": "Put some color on your forecast",
 
 			"download": {
-				"ios": "https://itunes.apple.com/app/haze/id594476963?ls=1&mt=8"
+				"ios": "https://itunes.apple.com/us/app/haze/id594476963?mt=8&uo=6&at=1l3vtDT&ct="
 			},
 			"adventure": false,
 			"website": "gethaze.com",
@@ -105,7 +105,7 @@
 			"tagline": "Track your favorite TV Shows",
 
 			"download": {
-				"ios": "http://itunes.apple.com/app/televised-tv-shows-weekly/id581289923?ls=1&mt=8"
+				"ios": "https://itunes.apple.com/us/app/televised-2-tv-shows-weekly/id581289923?mt=8&uo=6&at=1l3vtDT&ct="
 			},
 			"adventure": false,
 			"website": "televisedapp.com",
@@ -121,7 +121,7 @@
 			"tagline": "The simple approach to weather",
 
 			"download": {
-				"ios": "http://itunes.apple.com/app/thermo/id414215658?mt=8"
+				"ios": "https://itunes.apple.com/us/app/thermo/id414215658?mt=8&uo=6&at=1l3vtDT&ct="
 			},
 			"adventure": false,
 			"website": "thermo.me",
@@ -137,7 +137,7 @@
 			"tagline": "Intense 3D top-scrolling arcade action",
 
 			"download": {
-				"ios": "http://itunes.apple.com/app/101-airborne/id531317549?ls=1&mt=8"
+				"ios": "https://itunes.apple.com/us/app/101-airborne/id531317549?mt=8&uo=6&at=1l3vtDT&ct="
 			},
 			"adventure": false,
 			"website": "play101airborne.com",
@@ -157,7 +157,7 @@
 			"tagline": "Worlds first action tracking puzzler",
 
 			"download": {
-				"ios": "http://itunes.apple.com/app/treasure-trouble/id484542231?ls=1&mt=8"
+				"ios": "https://itunes.apple.com/us/app/treasure-trouble/id484542231?mt=8&uo=6&at=1l3vtDT&ct="
 			},
 			"adventure": false,
 			"website": "treasuretrouble.com",
@@ -188,7 +188,7 @@
 			"name": "Ultraviolet",
 			"tagline": "The worlds sexiest UV meter",
 
-			"download": "http://itunes.apple.com/dk/app/ultraviolet-uv-index/id445874481?l=da&mt=8",
+			"download": "https://itunes.apple.com/us/app/ultraviolet-uv-index/id445874481?mt=8&uo=6&at=1l3vtDT&ct=",
 			"adventure": false,
 			"website": false
 		}
@@ -227,7 +227,7 @@
 			
 			"background": "#194000",
 
-			"download": "http://itunes.apple.com/dk/app/puha!/id482010355?l=da&mt=8",
+			"download": "https://itunes.apple.com/us/app/puha!/id482010355?mt=8&uo=6&at=1l3vtDT&ct=",
 			"website": false
 		}
 	]
