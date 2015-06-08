@@ -49,7 +49,7 @@ build_path = "./public"
 theme_path = "./theme"
 
 paths = {
-	copyfile: "{downloads/*,favicon.ico,apple-touch-icon.png}",
+	copyfile: "{downloads/*,favicon.ico,apple-touch-icon.png,superlaserrobots/**/*,buddybuilder/**/*}",
 	handlebars: "**/*.handlebars",
 	sass: "assets/css/**/*.{scss,sass}",
 	coffee: "assets/js/**/*.coffee",
