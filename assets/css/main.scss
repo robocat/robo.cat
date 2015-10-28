@@ -4,12 +4,15 @@ $max-width: 1170px;
 $visual-grid-color: lightblue;
 $visual-grid-index: front;
 $visual-grid-opacity: 0.1;
-$shopify: false;
+
+$image-path: "/images/";
 
 @import "_normalize";
 
 @import "bourbon";
 @import "neat";
+
+@import "vendor/_atv";
 
 @import "_fonts";
 @import "_mixins";
@@ -21,6 +24,7 @@ $shopify: false;
 @import "sections/_team";
 @import "sections/_newsletter";
 @import "sections/_footer";
+
 
 .cont {
 	width: 100%;

@@ -96,7 +96,8 @@ gulp.task 'jsvendor', ->
 		.pipe(sourcemaps.init())
 		.pipe(order([
 			'components/retinajs/dist/retina.js',
-			'components/jquery/dist/retina.js'
+			'components/jquery/dist/retina.js',
+			'atvimg.js',
 			'modernizr.js'
 		]))
 		.pipe(concat('vendor.js'))

@@ -10,3 +10,13 @@
 		@include hidpi { content: image-url($hover + $retina-suffix + "." + $type); }
 	}
 }
+
+// Returns path for image-url
+$image-path: '' !default;
+
+@if not function-exists(image-url) {
+  @function image-url($filename) {
+    @return url('#{$image-path}#{$filename}');
+  }
+}
+

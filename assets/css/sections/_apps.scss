@@ -1,4 +1,4 @@
-$apps: "breaking" "bemyeyes" "wordbase" "haze" "televised" "airborne" "treasuretrouble" "thermodo" "thermo";
+$apps: "drtv" "breaking" "bemyeyes" "wordbase" "haze" "televised" "airborne" "treasuretrouble" "thermodo" "thermo";
 
 .app-container {
 	position: relative;
@@ -49,6 +49,12 @@ $apps: "breaking" "bemyeyes" "wordbase" "haze" "televised" "airborne" "treasuret
 		display: block;
 		margin: 0 auto;
 		width: 205px;
+
+		&.atvImg {
+			height: 192px;
+			width: 320px;
+			margin-bottom: 20px;
+		}
 	}
 
 	.name {
@@ -210,6 +216,13 @@ $apps: "breaking" "bemyeyes" "wordbase" "haze" "televised" "airborne" "treasuret
 }
 
 @include media(max-width 420px) {
+	.app {
+		.icon-link.atvImg {
+			height: 156px;
+			width: 260px;
+		}
+	}
+
 	.quarter-app {
 		.app {
 			@include span-columns(12 of 12);

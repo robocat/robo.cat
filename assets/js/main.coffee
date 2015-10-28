@@ -93,3 +93,5 @@ $(document).ready ->
 	$("#newsletter_form").on 'submit', (e) -> handleSignup e
 	# $("#newsletter_form .submit").on 'click', (e) -> handleSignup e
 
+	atvImg()
+

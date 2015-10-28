@@ -1,6 +1,31 @@
 {
 	"full": [
 		{
+			"class": "drtv",
+			"icon": "app-drtv-icon.png",
+			"theme": "dark",
+
+			"name": "DR TV",
+			"tagline": "The Future of Danish Televison",
+
+			"download": {
+				"atv": "https://itunes.apple.com/us/app/breaking-news-in-your-today/id953959186?mt=8&uo=6&at=1l3vtDT&ct="
+			},
+			"adventure": false,
+			"website": false,
+
+			"collaboration": {
+				"title": "Built for",
+				"website": "http://dr.dk/tv",
+				"image": "app-drtv-collab.png"
+			},
+
+			"parallax": [
+				"app-drtv-parallax1_2x.png",
+				"app-drtv-parallax2_2x.png"
+			]
+		},
+		{
 			"class": "breaking",
 			"icon": "app-breaking-icon.png",
 			"theme": "dark",

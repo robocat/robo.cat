@@ -44,8 +44,14 @@
 		<div class="app-container cont {{ this.class }}">
 			<div class="unblur"></div>
 			<section class="app int {{ this.theme }}">
-				<a href="//{{ this.website }}" class="icon-link">
+				<a href="{{#if this.website }}//{{ this.website }}{{else}}{{ this.download.ios }}{{/if}}" class="icon-link{{#if this.parallax}} atvImg{{/if}}">
 					{{{ img this.icon }}}
+
+					{{#if this.parallax}}
+						{{#each this.parallax}}
+							<div class="atvImg-layer" data-img="/images/{{this}}"></div>
+						{{/each}}
+					{{/if}}
 				</a>
 				
 				<h2 class="name">{{ this.name }}</h2>
@@ -63,14 +69,21 @@
 							<a href="{{ this.download.osx }}" class="osx button download {{ this.theme }}" title="{{ this.name }} on the App Store">Download{{#if this.download.ios}} for Mac{{/if}}</a>
 						</li>
 						{{/if}}
+						{{#if this.download.atv}}
+						<li>
+							<a href="{{ this.download.atv }}" class="atv button download {{ this.theme }}" title="{{ this.name }} on the Apple TV App Store">Download{{#if this.download.atv}} for Apple TV{{/if}}</a>
+						</li>
+						{{/if}}
 						{{#if this.adventure}}
 							<li>
 								<a href="{{ this.adventure }}" class="button adventure {{ this.theme }}" title="Read the adventure behind {{ this.name }}">Read the adventure</a>
 							</li>
 						{{/if}}
+						{{#if this.website}}
 						<li>
 							<a href="//{{ this.website }}" class="button website {{ this.theme }}" title="Visit the website">{{ this.website }}</a>
 						</li>
+						{{/if}}
 					</ul>
 				</nav>
 
