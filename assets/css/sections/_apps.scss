@@ -1,8 +1,36 @@
 $apps: "drtv" "breaking" "bemyeyes" "wordbase" "haze" "televised" "airborne" "treasuretrouble" "thermodo" "thermo";
 
+.vjs-poster, .vjs-loading-spinner, .vjs-text-track-display, .vjs-big-play-button, .vjs-control-bar, .vjs-error-display, .vjs-caption-settings {
+	display: none;
+}
+
 .app-container {
 	position: relative;
 	text-align: center;
+
+	.video-overlay {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		opacity: 0;
+		overflow: hidden;
+	}
+
+	.video-cover {
+		background: image-url("video-gradient.png");
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		opacity: 1;
+		z-index: 4;
+	}
 
 	&, .unblur {
 		background-position: center center;
@@ -35,6 +63,8 @@ $apps: "drtv" "breaking" "bemyeyes" "wordbase" "haze" "televised" "airborne" "tr
 .app {
 	padding: 115px 10px;
 	position: relative;
+	z-index: 10;
+	
 
 	&.light {
 		.name, .tagline, .button { color: #fff; }

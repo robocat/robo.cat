@@ -42,7 +42,12 @@
 <div class="products" id="products">
 	{{#each apps.full}}
 		<div class="app-container cont {{ this.class }}">
-			<div class="unblur"></div>
+			{{#if this.video-overlay}}
+				<div class="video-overlay"></div>
+				<div class="video-cover"></div>
+			{{else}}
+				<div class="unblur"></div>
+			{{/if}}
 			<section class="app int {{ this.theme }}">
 				<a href="{{#if this.website }}//{{ this.website }}{{else}}{{ this.download.ios }}{{/if}}" class="icon-link{{#if this.parallax}} atvImg{{/if}}">
 					{{{ img this.icon }}}

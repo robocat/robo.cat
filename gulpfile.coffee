@@ -49,7 +49,7 @@ build_path = "./public"
 theme_path = "./theme"
 
 paths = {
-	copyfile: "{downloads/*,favicon.ico,apple-touch-icon.png,superlaserrobots/**/*,buddybuilder/**/*}",
+	copyfile: "{downloads/*,favicon.ico,apple-touch-icon.png,superlaserrobots/**/*,buddybuilder/**/*,*.webm,*.mp4}",
 	handlebars: "**/*.handlebars",
 	sass: "assets/css/**/*.{scss,sass}",
 	coffee: "assets/js/**/*.coffee",
@@ -92,14 +92,16 @@ gulp.task 'coffee', ->
 
 
 gulp.task 'jsvendor', ->
-	gulp.src(paths.js)
+	scripts = [
+		'./components/retinajs/dist/retina.js',
+		'./components/jquery/dist/jquery.js',
+		'./components/video.js/dist/video.js',
+		'./components/Bigvideo/lib/bigvideo.js',
+		'./assets/js/vendor/modernizr.js',
+		'./assets/js/vendor/atvimg.js',
+	]
+	gulp.src(scripts)
 		.pipe(sourcemaps.init())
-		.pipe(order([
-			'components/retinajs/dist/retina.js',
-			'components/jquery/dist/retina.js',
-			'atvimg.js',
-			'modernizr.js'
-		]))
 		.pipe(concat('vendor.js'))
 		.pipe(gif(config.production, uglify()))
 		.pipe(sourcemaps.write('./maps'))

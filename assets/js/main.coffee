@@ -90,6 +90,18 @@ $(document).ready ->
 	stickyMenu()
 	removeHoverOnTouch()
 
+	if !Modernizr.touch
+		drContainer = $('.app-container.drtv .video-overlay')
+		bv = new $.BigVideo {container: drContainer, controls: false, forceAutoplay: false, doLoop: true}
+		bv.init()
+		bv.show [
+			type: 'video/mp4', src: '/drtv_movie.mp4', {ambient: true, doLoop: true}
+			type: 'video/webm', src: '/drtv_movie.webm', {ambient: true, doLoop: true}
+		]
+
+		bv.getPlayer().on 'loadedmetadata', () ->
+			drContainer.css 'opacity', 1
+
 	$("#newsletter_form").on 'submit', (e) -> handleSignup e
 	# $("#newsletter_form .submit").on 'click', (e) -> handleSignup e
 

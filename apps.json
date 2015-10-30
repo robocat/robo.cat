@@ -23,7 +23,9 @@
 			"parallax": [
 				"app-drtv-parallax1_2x.png",
 				"app-drtv-parallax2_2x.png"
-			]
+			],
+
+			"video-overlay": true
 		},
 		{
 			"class": "breaking",
