@@ -76,12 +76,17 @@
 						{{/if}}
 						{{#if this.download.atv}}
 						<li>
-							<a href="{{ this.download.atv }}" class="atv button download {{ this.theme }}" title="{{ this.name }} on the Apple TV App Store">Download{{#if this.download.atv}} for Apple TV{{/if}}</a>
+							<a class="atv button download {{ this.theme }}" title="{{ this.name }} on the Apple TV App Store">Find it on the Apple TV App Store</a>
 						</li>
 						{{/if}}
 						{{#if this.adventure}}
 							<li>
 								<a href="{{ this.adventure }}" class="button adventure {{ this.theme }}" title="Read the adventure behind {{ this.name }}">Read the adventure</a>
+							</li>
+						{{/if}}
+						{{#if this.video}}
+							<li>
+								<a href="{{ this.video }}" class="button adventure {{ this.theme }}" title="Read the adventure behind {{ this.name }}">Watch the video</a>
 							</li>
 						{{/if}}
 						{{#if this.website}}

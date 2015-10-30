@@ -9,7 +9,7 @@
 			"tagline": "The Future of Danish Televison",
 
 			"download": {
-				"atv": "https://itunes.apple.com/us/app/breaking-news-in-your-today/id953959186?mt=8&uo=6&at=1l3vtDT&ct="
+				"atv": true
 			},
 			"adventure": false,
 			"website": false,
@@ -25,7 +25,8 @@
 				"app-drtv-parallax2_2x.png"
 			],
 
-			"video-overlay": true
+			"video-overlay": true,
+			"video": false
 		},
 		{
 			"class": "breaking",
