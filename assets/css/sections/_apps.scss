@@ -97,6 +97,14 @@ $apps: "drtv" "breaking" "bemyeyes" "wordbase" "haze" "televised" "airborne" "tr
 		margin: 0 0 40px 0;
 	}
 
+	.download.atv {
+		opacity: 0.8;
+		
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
 	.retired {
 		text-decoration: line-through;
 	}

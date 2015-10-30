@@ -26,7 +26,7 @@
 			],
 
 			"video-overlay": true,
-			"video": false
+			"video": "https://www.youtube.com/watch?v=xFgv7TU1LmE&feature=youtu.be"
 		},
 		{
 			"class": "breaking",
