@@ -1,6 +1,34 @@
 {
 	"full": [
 		{
+			"class": "danskfilmskat",
+			"icon": "app-danskfilmskat-icon.png",
+			"theme": "light",
+
+			"name": "Dansk Filmskat",
+			"tagline": "Streaming Danish film classics",
+
+			"download": {
+				"atv": true
+			},
+			"adventure": false,
+			"website": "danskfilmskat.dk",
+
+			"collaboration": {
+				"title": "Built for",
+				"website": "https://www.danskfilmskat.dk/",
+				"image": "app-nordiskfilm-collab.png"
+			},
+
+			"parallax": [
+				"app-danskfilmskat-parallax1_2x.png",
+				"app-danskfilmskat-parallax2_2x.png"
+			],
+
+			"video-overlay": false,
+			"video": null
+		},
+		{
 			"class": "drtv",
 			"icon": "app-drtv-icon.png",
 			"theme": "dark",
