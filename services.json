@@ -1,0 +1,179 @@
+[
+	{
+		"class": "ios",
+		"icon": "services-ios-icon",
+
+		"image": {
+			"src": "services-ios-image",
+			"size": "302px 880px",
+			"position": {
+				"top": "-100px",
+				"left": "60px"
+			}
+		},
+
+		"email": {
+			"subject": "Inquiry about an iOS app",
+			"text": "Need an app? Get in touch!"
+		},
+
+		"title": "iOS",
+		"description": "We’ve been building iOS apps since the beginning of the platform and our apps and the apps we’ve built for our clients have been experienced by millions of people and praised by all corners of the tech industry. When we built your iOS app, you’re working with a veteran team of highly specialized individuals.",
+
+		"apps": [
+			{
+				"icon": "services-ios-app-breaking.png",
+				"name": "Breaking",
+				"tagline": "News in your today tab",
+				"link": "#app_breaking"
+			},
+			{
+				"icon": "services-ios-app-haze.png",
+				"name": "Haze",
+				"tagline": "Put some color on your forecast",
+				"link": "#app_haze"
+			},
+			{
+				"icon": "services-ios-app-televised.png",
+				"name": "Televised",
+				"tagline": "Track your favorite TV Shows",
+				"link": "#app_televised"
+			}
+		]
+	},
+	{
+		"class": "appletv",
+		"icon": "services-appletv-icon",
+
+		"image": {
+			"src": "services-appletv-image",
+			"size": "926px 699px",
+			"position": {
+				"top": "0px",
+				"left": "0px"
+			}
+		},
+
+		"email": {
+			"subject": "Inquiry about an Apple TV app",
+			"text": "Need an app? Get in touch!"
+		},
+
+		"title": "Apple TV",
+		"description": "A brave new world in TV has opened up and we’ve been setting the bar high from day one, collaborating on several high profile Apple TV apps with critical acclaim. We are incredibly passionate about this new platform and are actively pursuing clients who want their content on the big screen.",
+
+		"apps": [
+			{
+				"icon": "services-appletv-app-drtv.png",
+				"name": "DR TV",
+				"tagline": "The Future of Danish Television",
+				"link": "#app_drtv"
+			},
+			{
+				"icon": "services-appletv-app-danskfilmskat.png",
+				"name": "Dansk Filmskat",
+				"tagline": "Streaming Danish Film Classics",
+				"link": "#app_danskfilmskat"
+			}
+		]
+	},
+	{
+		"class": "design",
+		"icon": "services-design-icon",
+
+		"image": {
+			"src": "services-design-image",
+			"size": "579px 718px",
+			"position": {
+				"top": "-12px",
+				"left": "80px"
+			}
+		},
+
+		"email": {
+			"subject": "Inqury about a design",
+			"text": "Need a design? Get in touch!"
+		},
+
+		"title": "Design",
+		"description": "Robocat was founded on a love for design and our award winning products is a testament to the pixel-perfect dedication. We design Interfaces, Icons and logos for clients around the world. When you’re working with our designers, you are in capable, opiniated and skillful hands.",
+
+		"apps": [
+			{
+				"icon": "services-design-app-bemyeyes.png",
+				"name": "Be My Eyes",
+				"tagline": "Lend your eyes to the blind",
+				"link": "#app_bemyeyes"
+			},
+			{
+				"icon": "services-design-app-thermo.png",
+				"name": "Thermo",
+				"tagline": "The simple approach to weather",
+				"link": "#app_thermo"
+			}
+		]
+	},
+	{
+		"class": "games",
+		"icon": "services-games-icon",
+
+		"image": {
+			"src": "services-games-image",
+			"size": "880px 733px",
+			"position": {
+				"top": "-33px",
+				"left": "60px"
+			}
+		},
+
+		"email": {
+			"subject": "Inqury about a game",
+			"text": "Need games or gamification? Get in touch!"
+		},
+
+		"title": "Games",
+		"description": "We’re passionate gamers and game designers and you don’t have to look deep to see the influence on our work. We’ve worked on several award winning games and we build entertainment in both Unity and Swift. Wether you’re looking for a full fleshed game or looking to gamify your content, we’re sure to make it fun.",
+
+		"apps": [
+			{
+				"icon": "services-games-app-wordbase.png",
+				"name": "Wordbase",
+				"tagline": "Push your vocabulary to the limit",
+				"link": "#app_wordbase"
+			},
+			{
+				"icon": "services-games-app-airborne.png",
+				"name": "101 Airborne",
+				"tagline": "Intense 3D topscrolling retro action",
+				"link": "#app_airborne"
+			},
+			{
+				"icon": "services-games-app-treasuretrouble.png",
+				"name": "Treasure Trouble",
+				"tagline": "Worlds first action tracking puzzler",
+				"link": "#app_treasuretrouble"
+			}
+		]
+	},
+	{
+		"class": "consulting",
+		"icon": "services-consulting-icon",
+
+		"email": {
+			"subject": "Inqury about consulting",
+			"text": "Do you need help? Get in touch!"
+		},
+
+		"image": {
+			"src": "services-consulting-image",
+			"size": "248px 500px",
+			"position": {
+				"top": "60px",
+				"left": "120px"
+			}
+		},
+
+		"title": "Consulting",
+		"description": "In the past 7 years we’ve learned a lot about making and launching things. If you’re about to make or launch something, we might be able to help. We offer workshops, feedback and launch services and we’re always looking for interesting projects to get involved in."
+	}
+]

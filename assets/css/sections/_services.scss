@@ -1,0 +1,168 @@
+.services-selector {
+	display: flex;
+	justify-content: center;
+	padding-top: 130px;
+
+	.service {
+		border-radius: 5px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		flex: 0 1 130px;
+		text-align: center;
+		height: 120px;
+		margin-right: 10px;
+		cursor: pointer;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		.icon {
+			display: block;
+			margin: 0 auto 5px auto;
+		}
+
+		.title {
+			color: #424242;
+			font-size: 1.15em;
+			margin-bottom: 12px;
+		}
+
+		&.active {
+			background-color: #f7f7f7;
+		}
+	}
+}
+
+.services-container {
+	background-color: #f7f7f7;
+	// overflow-y: hidden;
+	// height: 760px;
+	margin-top: 150px;
+}
+
+.services {
+	display: flex;
+	flex-flow: column nowrap;
+	margin-top: 0px;
+
+	.service {
+		width: 100%;
+		min-height: 700px;
+		display: none;
+		flex-flow: row wrap;
+		align-content: stretch;
+
+		.left {
+			flex: 0 0 50%;
+			margin-left: -40px;
+			height: 100%;
+			width: 50%;
+			position: relative;
+		}
+
+		.background {
+			background-repeat: no-repeat;
+			background-position: top right;
+			width: 100%;
+			height: 800px;
+			width: 1000px;
+			position: absolute;
+			right: 0;
+		}
+
+		.right {
+			padding-left: 40px;
+			flex: 0 0 50%;
+			padding-top: 60px;
+		}
+
+		.title {
+			margin-bottom: 10px;
+		}
+
+		.description {
+			margin-top: 0;
+		}
+
+		ul {
+			list-style: none;
+			padding-left: 20px;
+			margin-top: 40px;
+		}
+
+		li {
+			margin: 0 0 10px 0;
+			padding: 0;
+		}
+
+		li a {
+			display: flex;
+			align-content: flex-start;
+			text-decoration: none;
+		}
+
+		.icon {
+			display: inline-block;
+		}
+
+		.meta {
+			flex: 1 1 auto;
+			display: flex;
+			flex-flow: column nowrap;
+			margin-left: 10px;
+			justify-content: center;
+		}
+
+		.name {
+			color: #0b0e15;
+			font-size: 18px;
+			font-weight: 900;
+			line-height: 1em;
+			margin: 0;
+		}
+
+		.tagline {
+			color: #777777;
+			font-size: 16px;
+			margin: 0;
+			line-height: 1em;
+		}
+
+		.email {
+			color: #0b0e15;
+			display: block;
+			@include retina-image("services-email", 22px 16px);
+			background-position: 0 50%;
+			background-repeat: no-repeat;
+			padding-left: 30px;
+			margin-top: 40px;
+			font-size: 18px;
+		}
+	}
+}
+
+.clients-container {
+	padding: 120px 0;
+}
+
+.clients {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: space-between;
+	align-content: center;
+
+	.client {
+		padding: 20px 30px;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+
+		img {
+			flex: 0 0 auto;
+		}
+	}
+}

@@ -16,6 +16,7 @@
 				</a>
 			</div>
 			<div class="right">
+				<a href="#services" id="nav-services" class="scrollbased">Services</a>
 				<a href="#products" id="nav-products" class="scrollbased">Products</a>
 				<a href="#team" id="nav-team" class="scrollbased">Team</a>
 				{{!-- <a href="//adventures.robo.cat/" id="nav-adventures">Adventures</a> --}}
@@ -35,13 +36,69 @@
 
 <div class="aboutus-container cont">
 	<div class="aboutus int">
-		<p>Each of our adventures are guided by a strong sense of craftsmanship and we're always trying to imbue our products with a touch of wonder. In short – we love building things.</p>
+		<p>Each of our adventures are guided by a strong sense of craftsmanship and we're always trying to imbue our products with a touch of wonder. In short – we love building things. Here's some of the things we do.</p>
 	</div>
 </div>
 
+<div class="services-selector-container cont" id="services">
+	<div class="services-selector int">
+		{{#each services}}
+			<div class="service" data-service="{{class}}">
+				<img src="/images/{{icon}}.png" data-at2x="/images/{{icon}}_2x.png" class="icon" />
+				<span class="title">{{title}}</span>
+			</div>
+		{{/each}}
+	</div>
+</div>
+
+<div class="services-container cont">
+	<div class="services int">
+		{{#each services}}
+			<div class="service" id="service_{{class}}">
+				<div class="left" style="margin-left: -{{image.position.left}};">
+					<div class="background" style="background-image: url('/images/{{image.src}}_2x.png'); background-size: {{image.size}};top: {{image.position.top}};">&nbsp;</div>
+				</div>
+				<div class="right" style="padding-left: {{image.position.left}};">
+					<h2 class="title">{{title}}</h2>
+					<p class="description">{{description}}</p>
+
+					<ul>
+						{{#each this.apps}}
+							<li class="app">
+								<a href="{{link}}" class="scrollbased">
+									<div>
+										<img src="/images/{{icon}}" class="icon">
+									</div>
+									<div class="meta">
+										<span class="name">{{name}}</span>
+										<span class="tagline">{{tagline}}</span>
+									</div>
+								</a>
+							</li>
+						{{/each}}
+					</ul>
+
+					<a class="email" href="mailto:inquiries@robo.cat?subject={{email.subject}}">{{email.text}}</a>
+				</div>
+			</div>
+		{{/each}}
+	</div>
+</div>
+
+<div class="clients-container cont">
+	<div class="clients int">
+		{{#each clients}}
+			<div class="client">
+				<img class="logo" src="/images/client-{{this}}.png" data-at2x="/images/client-{{this}}_2x.png" />
+			</div>
+		{{/each}}
+	</div>
+</div>
+
+
 <div class="products" id="products">
 	{{#each apps.full}}
-		<div class="app-container cont {{ this.class }}">
+		<div class="app-container cont {{ this.class }}" id="app_{{this.class}}">
 			{{#if this.video-overlay}}
 				<div class="video-overlay"></div>
 				<div class="video-cover"></div>

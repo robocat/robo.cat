@@ -38,6 +38,21 @@ menuItems.click (e) ->
 		offsetTop = $(href).offset().top
 	$('html body').stop().animate {scrollTop: offsetTop}, "slow"
 
+appItems = $(".service .app a.scrollbased")
+scrollAppItems = appItems.map ->
+	item = $($(this).attr('href'))
+	return item if item.length
+
+appItems.click (e) ->
+	e.preventDefault()
+	
+	href = $(this).attr('href')
+	if href == "#"
+		offsetTop = 0
+	else
+		offsetTop = $(href).offset().top
+	$('html body').stop().animate {scrollTop: offsetTop}, "slow"
+
 setActiveMenuItem = ->
 	$win = $(window)
 	fromTop = $win.scrollTop() + $win.height() - 200
@@ -79,6 +94,24 @@ handleSignup = (e) ->
 removeHoverOnTouch = ->
 	$('body').removeClass 'no-touch' if Modernizr.touch != false
 
+configureServices = ->
+	services = $(".services-container .service")
+	selectors = $(".services-selector .service")
+
+	services.first().css 'display', 'flex'
+	selectors.first().addClass 'active'
+
+	selectors.click (e) ->
+		e.preventDefault()
+
+		service = $(this).data 'service'
+
+		services.css 'display', 'none'
+		selectors.removeClass 'active'
+
+		$("#service_#{service}").css 'display', 'flex'
+		$(this).addClass 'active'
+
 $(window).resize -> fitHeader()
 
 $(window).scroll -> 
@@ -89,6 +122,7 @@ $(document).ready ->
 	fitHeader()
 	stickyMenu()
 	removeHoverOnTouch()
+	configureServices()
 
 	if !Modernizr.touch
 		drContainer = $('.app-container.drtv .video-overlay')
