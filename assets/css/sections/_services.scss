@@ -166,3 +166,73 @@
 		}
 	}
 }
+
+@include media(max-width 740px) {
+	.services {
+		// flex-flow: row wrap;
+
+		.service {
+			height: auto;
+
+			.left {
+				// display: none;
+				// flex: 1 1 100%;
+				margin-left: 0 !important;
+				height: 600px;
+				margin-top: 0;
+			}
+
+			.background {
+				position: relative;
+				left: auto;
+				top: auto !important;
+				height: 100%;
+				background-position: 50% 50%;
+				background-size: contain !important;
+				width: 100%;
+			}
+
+			.right {
+				// flex: 1 1 100%;
+				padding-top: 0px;
+				padding-left: 20px !important;
+			}
+		}
+	}
+}
+
+@include media(max-width 700px) {
+	.services-selector {
+		flex-flow: row wrap;
+
+		.service {
+			// flex: 0 1 200px;
+		}
+	}
+}
+
+@include media(max-width 525px) {
+	.services {
+		.service {
+
+			.left {
+				display: none;
+			}
+
+			.right {
+				flex: 1 1 100%;
+			}
+		}
+	}
+}
+
+
+@include media(max-width 425px) {
+	.services-selector {
+
+
+		.service {
+			// flex: 0 1 160px;
+		}
+	}
+}
