@@ -98,6 +98,10 @@ configureServices = ->
 	services = $(".services-container .service")
 	selectors = $(".services-selector .service")
 
+	services.addClass 'hidden'
+	services.fadeTo(0, 0)
+
+	services.first().removeClass 'hidden'
 	services.first().fadeTo(200, 1)
 	selectors.first().addClass 'active'
 
@@ -107,9 +111,11 @@ configureServices = ->
 		service = $(this).data 'service'
 
 		services.fadeTo(200, 0)
+		services.addClass('hidden')
 		selectors.removeClass 'active'
 
 		$("#service_#{service}").fadeTo(200, 1)
+		$("#service_#{service}").removeClass 'hidden'
 		$(this).addClass 'active'
 
 $(window).resize -> fitHeader()
