@@ -13,6 +13,7 @@
 		height: 120px;
 		margin-right: 10px;
 		cursor: pointer;
+		@include transition(background-color 0.2s ease-in-out);
 
 		&:last-child {
 			margin-right: 0;
@@ -46,13 +47,18 @@
 	display: flex;
 	flex-flow: column nowrap;
 	margin-top: 0px;
+	position: relative;
+	min-height: 700px;
 
 	.service {
 		width: 100%;
 		min-height: 700px;
-		display: none;
+		display: flex;
 		flex-flow: row wrap;
 		align-content: stretch;
+		opacity: 0;
+		position: absolute;
+
 
 		.left {
 			flex: 0 0 50%;
@@ -84,6 +90,7 @@
 
 		.description {
 			margin-top: 0;
+			line-height: 1.4em;
 		}
 
 		ul {
@@ -93,8 +100,11 @@
 		}
 
 		li {
-			margin: 0 0 10px 0;
-			padding: 0;
+			padding: 5px;
+
+			&:hover {
+				a { opacity: 0.8; }
+			}
 		}
 
 		li a {
@@ -163,6 +173,10 @@
 
 		img {
 			flex: 0 0 auto;
+		}
+
+		a:hover {
+			opacity: 0.8;
 		}
 	}
 }

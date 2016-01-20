@@ -1,11 +1,56 @@
 [
-	"aller",
-	"dr",
-	"nordiskfilm",
-	"kiloo",
-	"jabra",
-	"iconfinder",
-	"simplyture",
-	"greenerpastures",
-	"knapnok"
+	{
+		"class" :"aller",
+		"name": "Aller",
+		"link": "http://www.aller.dk/"
+
+	},
+	{
+		"class" :"dr",
+		"name": "Danmarks Radio",
+		"link": "http://dr.dk"
+
+	},
+	{
+		"class" :"nordiskfilm",
+		"name": "Nordisk Film",
+		"link": "http://nordiskfilm.dk"
+
+	},
+	{
+		"class" :"kiloo",
+		"name": "Kiloo",
+		"link": "http://www.kiloo.com/"
+
+	},
+	{
+		"class" :"jabra",
+		"name": "Jabra",
+		"link": "http://www.jabra.dk/"
+
+	},
+	{
+		"class" :"iconfinder",
+		"name": "Iconfinder",
+		"link": "http://iconfinder.com"
+
+	},
+	{
+		"class" :"simplyture",
+		"name": "Simplyture",
+		"link": "http://www.simplyture.com/en/"
+
+	},
+	{
+		"class" :"greenerpastures",
+		"name": "Greener Pastures",
+		"link": "https://greenerpastures.dk/"
+
+	},
+	{
+		"class" :"knapnok",
+		"name": "KnapNok Games",
+		"link": "http://knapnokgames.com/"
+
+	}
 ]

@@ -22,19 +22,19 @@
 
 		"apps": [
 			{
-				"icon": "services-ios-app-breaking.png",
+				"icon": "services-ios-app-breaking",
 				"name": "Breaking",
 				"tagline": "News in your today tab",
 				"link": "#app_breaking"
 			},
 			{
-				"icon": "services-ios-app-haze.png",
+				"icon": "services-ios-app-haze",
 				"name": "Haze",
 				"tagline": "Put some color on your forecast",
 				"link": "#app_haze"
 			},
 			{
-				"icon": "services-ios-app-televised.png",
+				"icon": "services-ios-app-televised",
 				"name": "Televised",
 				"tagline": "Track your favorite TV Shows",
 				"link": "#app_televised"
@@ -64,13 +64,13 @@
 
 		"apps": [
 			{
-				"icon": "services-appletv-app-drtv.png",
+				"icon": "services-appletv-app-drtv",
 				"name": "DR TV",
 				"tagline": "The Future of Danish Television",
 				"link": "#app_drtv"
 			},
 			{
-				"icon": "services-appletv-app-danskfilmskat.png",
+				"icon": "services-appletv-app-danskfilmskat",
 				"name": "Dansk Filmskat",
 				"tagline": "Streaming Danish Film Classics",
 				"link": "#app_danskfilmskat"
@@ -100,13 +100,13 @@
 
 		"apps": [
 			{
-				"icon": "services-design-app-bemyeyes.png",
+				"icon": "services-design-app-bemyeyes",
 				"name": "Be My Eyes",
 				"tagline": "Lend your eyes to the blind",
 				"link": "#app_bemyeyes"
 			},
 			{
-				"icon": "services-design-app-thermo.png",
+				"icon": "services-design-app-thermo",
 				"name": "Thermo",
 				"tagline": "The simple approach to weather",
 				"link": "#app_thermo"
@@ -136,19 +136,19 @@
 
 		"apps": [
 			{
-				"icon": "services-games-app-wordbase.png",
+				"icon": "services-games-app-wordbase",
 				"name": "Wordbase",
 				"tagline": "Push your vocabulary to the limit",
 				"link": "#app_wordbase"
 			},
 			{
-				"icon": "services-games-app-airborne.png",
+				"icon": "services-games-app-airborne",
 				"name": "101 Airborne",
 				"tagline": "Intense 3D topscrolling retro action",
 				"link": "#app_airborne"
 			},
 			{
-				"icon": "services-games-app-treasuretrouble.png",
+				"icon": "services-games-app-treasuretrouble",
 				"name": "Treasure Trouble",
 				"tagline": "Worlds first action tracking puzzler",
 				"link": "#app_treasuretrouble"

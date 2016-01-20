@@ -67,7 +67,7 @@
 							<li class="app">
 								<a href="{{link}}" class="scrollbased">
 									<div>
-										<img src="/images/{{icon}}" class="icon">
+										<img src="/images/{{icon}}.png" data-at2x="/images/{{icon}}_2x.png" class="icon">
 									</div>
 									<div class="meta">
 										<span class="name">{{name}}</span>
@@ -89,7 +89,9 @@
 	<div class="clients int">
 		{{#each clients}}
 			<div class="client">
-				<img class="logo" src="/images/client-{{this}}.png" data-at2x="/images/client-{{this}}_2x.png" />
+				<a href="{{link}}" title="{{name}}" target="_blank">
+					<img class="logo" src="/images/client-{{class}}.png" data-at2x="/images/client-{{class}}_2x.png" />
+				</a>
 			</div>
 		{{/each}}
 	</div>
