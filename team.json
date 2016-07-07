@@ -1,17 +1,17 @@
 [
 	{
-		"name": "Willi Wu",
-		"role": "Founder & Lead Developer",
-		"avatar": "team-willi.jpg",
-		"twitter": "williwu",
-		"website": "icelantern.com"
-	},
-	{
 		"name": "Michael Flarup",
 		"role": "Founder & Lead Designer",
 		"avatar": "team-michael.jpg",
 		"twitter": "flarup",
 		"website": "pixelresort.com"
+	},
+	{
+		"name": "Willi Wu",
+		"role": "Co-Founder",
+		"avatar": "team-willi.jpg",
+		"twitter": "williwu",
+		"website": "icelantern.com"
 	},
 	{
 		"name": "Ulrik Damm",
@@ -28,43 +28,10 @@
 		"website": "kristian.co"
 	},
 	{
-		"name": "Simon Støvring",
-		"role": "iOS & OS X Developer",
-		"avatar": "team-simon.jpg",
-		"twitter": "simonbs",
-		"website": "simonbs.dk"
-	},
-	{
-		"name": "Charlotte Jørgensen",
-		"role": "Office Manager & Support",
-		"avatar": "team-charlotte.jpg",
-		"twitter": false,
-		"website": false
-	},
-	{
-		"name": "Vladimir Keleshev",
-		"role": "Backend & OS X Developer",
-		"avatar": "team-vladimir.jpg",
-		"twitter": "keleshev",
-		"website": "keleshev.com"
-	},
-	{
 		"name": "Andor Uhlár",
 		"role": "Backend Developer",
 		"avatar": "team-andor.jpg",
 		"twitter": "andor44"
-	},
-	{
-		"name": "Max Sagasser",
-		"role": "Business Development",
-		"avatar": "team-max.png",
-		"twitter": "Max_Saga"
-	},
-	{
-		"name": "Christian Enevoldsen",
-		"role": "iOS Intern",
-		"avatar": "team-christian.png",
-		"twitter": "chrsapp"
 	},
 	{
 		"name": "Emil Baehr",
